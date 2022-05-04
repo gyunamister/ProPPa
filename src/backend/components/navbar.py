@@ -10,7 +10,7 @@ def navbar():
         children=[
             dbc.NavItem(dbc.NavLink("Home", href="/home",
                         style=LINK_DARK_CONTENT_STYLE)),
-            dbc.NavItem(dbc.NavLink("Design", href=DESIGN_URL,
+            dbc.NavItem(dbc.NavLink("Discover Models", href=DESIGN_URL,
                         style=LINK_DARK_CONTENT_STYLE)),
             # dbc.NavItem(dbc.NavLink("Dashboard & Impact Analysis", href=DASHBOARD_URL,
             #             style=LINK_DARK_CONTENT_STYLE)),
@@ -18,7 +18,7 @@ def navbar():
             #             style=LINK_DARK_CONTENT_STYLE)),
             # dbc.NavItem(dbc.NavLink("Diagnostics-View", href=DVIEW_URL,
             #             style=LINK_DARK_CONTENT_STYLE)),
-            dbc.NavItem(dbc.NavLink("Performance-Analysis",
+            dbc.NavItem(dbc.NavLink("Design Problem Patterns",
                         href=PERF_ANALYSIS_URL, style=LINK_DARK_CONTENT_STYLE)),
             # dbc.NavItem(dbc.NavLink("Action-Pattern", href=PATTERN_URL,
             #             style=LINK_DARK_CONTENT_STYLE)),
@@ -28,7 +28,7 @@ def navbar():
             #             style=LINK_DARK_CONTENT_STYLE))
         ],
         id="navbar",
-        brand="OPerA",
+        brand="DTween",
         brand_href="/home",
         sticky="top",
         color=PRIMARY_DARK,

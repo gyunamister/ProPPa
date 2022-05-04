@@ -141,7 +141,7 @@ jobs_tab_content = card(
     ])
 
 # Page layout
-page_layout = container("OperA: Object-centric Performance Analysis",
+page_layout = container("Digital Twin: General Problem Patterns",
                         [
                             dbc.Tabs([
                                 tab(upload_tab_content, upload_tab_title,
@@ -232,7 +232,7 @@ def upload_data(session, content, name, jobs, options, last_job):
                     #     log_hash
                 return write_global_signal_value([session, log_hash, data_format, name, str(date)]), jobs, '', options + make_job_option(jobs, log_hash), FONT_STYLE, log_hash
             else:
-                return dash.no_update, dash.no_update, dash.no_update, html.Div(
+                return dash.no_update, dash.no_update, html.Div(
                     dbc.Alert("There was a problem processing the uploaded file. Please check the syntactic "
                               "correctness of the file with respect to pandas.read_csv "
                               "in case of csv and to json.loads in case of json after base64 encoding "

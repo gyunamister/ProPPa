@@ -57,6 +57,21 @@ class DefaultDiagnostics(Enum):
     ARC_FREQ = 'arc frequency'.title()
 
 
+class AvailablePerformance(Enum):
+    WAITING_TIME = 'waiting time'.title()
+    SERVICE_TIME = 'service time'.title()
+    SOJOURN_TIME = 'sojourn time'.title()
+    SYNCHRO_TIME = 'synchronization time'.title()
+    POOLING_TIME = 'pooling time'.title()
+    LAGGING_TIME = 'lagging time'.title()
+
+
+class AvailableFrequency(Enum):
+    GROUP_SIZE = 'object count'.title()
+    ACT_FREQ = 'activity frequency'.title()
+    # ARC_FREQ = 'arc frequency'.title()
+
+
 class AvailableDiagnostics(Enum):
     GROUP_SIZE = 'object count'.title()
     WAITING_TIME = 'waiting time'.title()
