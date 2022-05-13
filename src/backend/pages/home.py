@@ -459,15 +459,15 @@ def run_parse_log(n, children, jobs, temp_jobs, form):
         State(temp_jobs_store_id_maker(title), 'data') for title in STORES_SIGNALS
     ]
 )
-def init_jobs(n, jobs, jobs1, jobs2, jobs3, jobs4, jobs5, jobs6, jobs7, jobs8, jobs9):
+def init_jobs(n, jobs, jobs1, jobs2, jobs3, jobs4, jobs5, jobs6, jobs7, jobs8, jobs9, jobs10):
     jobs_list = [jobs, jobs1, jobs2, jobs3,
-                 jobs4, jobs5, jobs6, jobs7, jobs8, jobs9]
+                 jobs4, jobs5, jobs6, jobs7, jobs8, jobs9, jobs10]
     if n is not None and any([job is not None for job in jobs_list]):
         # Forget all the celery task results in the redis results backend associated with a stored job
         for job in jobs_list:
             forget_all_tasks(jobs)
-        return tuple([True, True, None] + [True] * 10)
+        return tuple([True, True, None] + [True] * 11)
     else:
-        return tuple([dash.no_update] * 13)
+        return tuple([dash.no_update] * 14)
 
 #

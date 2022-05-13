@@ -19,6 +19,9 @@ from ocpa.objects.log.importer.ocel.versions import import_ocel_json
 from ocpa.algo.enhancement.token_replay_based_performance import algorithm as performance_factory
 import pickle
 import redis
+import ocpa.algo.retrieval.enhanced_oc_petri_net.algorithm as enhanced_oc_petri_net_factory
+import ocpa.algo.retrieval.pattern_graph.algorithm as pattern_graph_factory
+import ocpa.algo.conformance.pattern.algorithm as pattern_evaluation_factory
 
 # The time in seconds a callback waits for a celery task to get ready
 CELERY_TIMEOUT = 21600
@@ -92,6 +95,13 @@ def analyze_opera(self, ocpn, data, parameters):
 
 
 @celery.task(bind=True, serializer='pickle')
+def retrieve_eocpn(self, ocpn, ocel, parameters):
+    eocpn = enhanced_oc_petri_net_factory.apply(
+        ocpn, ocel, parameters=parameters)
+    store_redis(eocpn, self.request)
+
+
+@celery.task(bind=True, serializer='pickle')
 def generate_diagnostics(self, ocpn, data, start_date=None, end_date=None):
     # if start_date != "" and end_date != "":
     #     # start_date = parser.parse(start_date).date()
@@ -103,6 +113,31 @@ def generate_diagnostics(self, ocpn, data, start_date=None, end_date=None):
     diagnostics = diagnostics_factory.apply(ocpn, data)
     print("Diagnostics generated: {}".format(diagnostics))
     store_redis(diagnostics, self.request)
+
+
+@celery.task(bind=True, serializer='pickle')
+def add_pattern_graph(self, pattern_graphs, edit_pattern_graph):
+    pg = pattern_graph_factory.apply(edit_pattern_graph)
+    pattern_graphs.append(pg)
+    print("Pattern Graph generated: {}".format(pg))
+    store_redis(pattern_graphs, self.request)
+
+
+@celery.task(bind=True, serializer='pickle')
+def clear_all_pattern_graphs(self):
+    print("clear patterns")
+    store_redis([], self.request)
+
+
+@celery.task(bind=True, serializer='pickle')
+def evaluate_pattern_graphs(self, pattern_graphs, eocpn):
+    eval_results = {}
+    for pg in pattern_graphs:
+        print(pg)
+        eval_result = pattern_evaluation_factory.apply(
+            pg, eocpn, parameters=None)
+        eval_results[pg.name] = eval_result
+    store_redis(eval_results, self.request)
 
 
 def get_remote_data(user, log_hash, jobs, task_type, length=None):

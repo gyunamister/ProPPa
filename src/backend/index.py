@@ -16,11 +16,12 @@ from backend.pages.perf_analysis import page_layout as perfanalysis_layout
 # from backend.pages.control_view import page_layout as control_view_layout
 # from backend.pages.operational_view import page_layout as operational_view_layout
 # from backend.pages.dashboard import page_layout as dashboard_layout
-# from backend.pages.action_pattern import page_layout as pattern_layout
+from backend.pages.pattern import page_layout as pattern_layout
+from backend.pages.monitoring import page_layout as monitoring_layout
 from backend.pages.home import page_layout as home_layout
 from backend.param.constants import DEFAULT_JOBS, ABOUT_URL, \
     DEFAULT_FORM, STORES_SIGNALS, FORMS, TRACE_SIGNAL, MULTI_PAGE_URLS, \
-    GLOBAL_FORM_SIGNAL, TRACE_RESULT_SIGNAL, MULTI_PAGE_REFRESH, CVIEW_URL, DVIEW_URL, DASHBOARD_URL, PATTERN_URL, PERF_ANALYSIS_URL, DESIGN_URL, OVIEW_URL
+    GLOBAL_FORM_SIGNAL, TRACE_RESULT_SIGNAL, MULTI_PAGE_REFRESH, CVIEW_URL, DVIEW_URL, DASHBOARD_URL, PATTERN_URL, PERF_ANALYSIS_URL, DESIGN_URL, OVIEW_URL, MONITORING_URL
 from backend.param.styles import GLOBAL_STYLE, NO_DISPLAY
 from backend.util import read_global_signal_value, no_update
 from dash.dependencies import Input, Output
@@ -105,8 +106,10 @@ def display_page(pathname):
         return perfanalysis_layout
     # elif pathname == DASHBOARD_URL:
     #     return dashboard_layout
-    # elif pathname == PATTERN_URL:
-    #     return pattern_layout
+    elif pathname == PATTERN_URL:
+        return pattern_layout
+    elif pathname == MONITORING_URL:
+        return monitoring_layout
     else:
         return home_layout
 

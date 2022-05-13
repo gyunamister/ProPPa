@@ -275,6 +275,8 @@ class AvailableTasks(Enum):
     STORE_CONFIG = 'store_config'
     SIMULATE = 'simulate'
     OPERA = 'OPerA'
+    DESIGN_PROBLEM_PATTERN = 'design_problem_pattern'
+    EVALUATE_PATTERN = 'evaluate_pattern'
 
 
 class AvailableColorPalettes(Enum):
