@@ -277,6 +277,7 @@ class AvailableTasks(Enum):
     OPERA = 'OPerA'
     DESIGN_PROBLEM_PATTERN = 'design_problem_pattern'
     EVALUATE_PATTERN = 'evaluate_pattern'
+    UPLOAD_MONITORING_DATA = 'upload_monitoring_data'
 
 
 class AvailableColorPalettes(Enum):

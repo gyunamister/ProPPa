@@ -38,7 +38,6 @@ available_performance = [e.value for e in AvailablePerformance]
 
 
 diagnostics_buttons = [
-    button(diagnostics_refresh_button_title, show_title_maker, show_button_id),
     button(diagnostics_compute_button_title, show_title_maker, show_button_id)
 ]
 
@@ -103,8 +102,9 @@ operational_view_content = dbc.Row(
     style={'height': '100vh'}
 )
 
-page_layout = container('Designing Problem Patterns',
+page_layout = container('Enhancing Object-Centric Petri Nets',
                         [
+                            dcc.Location(id='enhance-url', refresh=False),
                             single_row(html.Div(diagnostics_buttons)),
                             html.Hr(),
                             diagnostics_parameters,
@@ -134,7 +134,7 @@ def show_ocpn(pathname, value):
     Output("my-date-picker-range", "initial_visible_month"),
     Output("my-date-picker-range", "start_date"),
     Output("my-date-picker-range", "end_date"),
-    Input(show_button_id(diagnostics_refresh_button_title), 'n_clicks'),
+    Input('enhance-url', 'pathname'),
     Input(show_button_id(diagnostics_compute_button_title), 'n_clicks'),
     State(global_form_load_signal_id_maker(GLOBAL_FORM_SIGNAL), 'children'),
     State(temp_jobs_store_id_maker(PARSE_TITLE), 'data'),
@@ -145,7 +145,7 @@ def show_ocpn(pathname, value):
     State('diagnostics-checklist', 'value'),
     State('aggregation-checklist', 'value'),
 )
-def load_ocpn(n_load, n_diagnosis, value, data_jobs, design_jobs, perf_jobs, start_date, end_date, diagnostics_list, aggregation_list):
+def load_ocpn(pathname, n_diagnosis, value, data_jobs, design_jobs, perf_jobs, start_date, end_date, diagnostics_list, aggregation_list):
     ctx = dash.callback_context
     if not ctx.triggered:
         button_id = 'No clicks yet'
@@ -153,7 +153,7 @@ def load_ocpn(n_load, n_diagnosis, value, data_jobs, design_jobs, perf_jobs, sta
         button_id = ctx.triggered[0]['prop_id'].split('.')[0]
         button_value = ctx.triggered[0]['value']
 
-    if button_id == show_button_id(diagnostics_refresh_button_title):
+    if button_value == PERF_ANALYSIS_URL:
         user = request.authorization['username']
         log_hash, date = read_global_signal_value(value)
         data = get_remote_data(user, log_hash, data_jobs,
@@ -223,9 +223,9 @@ def show_selected(selected, value, perf_jobs):
         selected_diag = eocpn.diagnostics[selected]
 
         plate_frames = [html.H3(f"Performance @ {selected}")]
-        if 'group_size_hist' in selected_diag:
+        if 'object_count' in selected_diag:
             plate_frames.append(create_2d_plate(
-                'Number of objects', selected_diag['group_size_hist'], time_measure=False))
+                'Number of objects', selected_diag['object_count'], time_measure=False))
             plate_frames.append(html.Br())
 
         if 'waiting_time' in selected_diag:

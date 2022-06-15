@@ -130,14 +130,14 @@ def clear_all_pattern_graphs(self):
 
 
 @celery.task(bind=True, serializer='pickle')
-def evaluate_pattern_graphs(self, pattern_graphs, eocpn):
-    eval_results = {}
+def evaluate_pattern_graphs(self, pattern_graphs, ocel, eocpn):
+    results = {}
     for pg in pattern_graphs:
         print(pg)
-        eval_result = pattern_evaluation_factory.apply(
-            pg, eocpn, parameters=None)
-        eval_results[pg.name] = eval_result
-    store_redis(eval_results, self.request)
+        exist, message = pattern_evaluation_factory.apply(
+            pg, ocel, eocpn, parameters=None)
+        results[pg.name] = (exist, message)
+    store_redis(results, self.request)
 
 
 def get_remote_data(user, log_hash, jobs, task_type, length=None):

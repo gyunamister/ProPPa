@@ -23,7 +23,6 @@ from backend.tasks.tasks import store_redis_backend, parse_data, get_remote_data
 from backend.util import add_job, run_task, forget_all_tasks, get_job_id, check_existing_job, \
     parse_contents, read_active_attribute_form, build_csv_param, write_global_signal_value, get_attribute_form_dict, guarantee_list_input, no_update, build_json_param, \
     read_global_signal_value
-from celery.result import AsyncResult
 from dtween.available.available import AvailableTasks, AvailableSelections
 from dash.dependencies import Input, Output, State
 from datetime import datetime
@@ -141,7 +140,7 @@ jobs_tab_content = card(
     ])
 
 # Page layout
-page_layout = container("Digital Twin: General Problem Patterns",
+page_layout = container("ProPPa: Process-centric Problem Patterns",
                         [
                             dbc.Tabs([
                                 tab(upload_tab_content, upload_tab_title,

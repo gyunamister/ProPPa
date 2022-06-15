@@ -49,6 +49,8 @@ GUARD = 'guard'
 
 COMP_OPERATORS = ['>', '=', '<', '>=', '<=', '!=']
 
+UNITS = ['day(s)', 'hour(s)', 'minute(s)', 'second(s)']
+
 
 OBJECT_FILTER = 'object-filter'
 EVENT_FILTER = 'event-filter'

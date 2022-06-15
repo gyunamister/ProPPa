@@ -55,10 +55,10 @@ AGG_NAME_MAP = {
 #     'max. lagging time'.title(): 'max_lagging_time',
 #     'std. lagging time'.title(): 'stdev_lagging_time',
 #     'activity frequency'.title(): 'act_freq',
-#     'avg. group size'.title(): 'mean_group_size',
-#     'med. group size'.title(): 'median_group_size',
-#     'min. group size'.title(): 'min_group_size',
-#     'max. group size'.title(): 'max_group_size',
+#     'avg. group size'.title(): 'mean_object_count',
+#     'med. group size'.title(): 'median_object_count',
+#     'min. group size'.title(): 'min_object_count',
+#     'max. group size'.title(): 'max_object_count',
 #     'arc frequency'.title(): 'arc_freq'
 # }
 
@@ -71,8 +71,21 @@ DIAGNOSTICS_NAME_MAP = {
     'lagging time'.title(): 'lagging_time',
     'flow time'.title(): 'flow_time',
     'activity frequency'.title(): 'act_freq',
-    'object count'.title(): 'group_size',
+    'object count'.title(): 'object_count',
     'arc frequency'.title(): 'arc_freq'
+}
+
+DIAGNOSTICS_SHOW_NAME_MAP = {
+    'waiting_time': 'waiting time'.title(),
+    'service_time': 'service time'.title(),
+    'sojourn_time': 'sojourn time'.title(),
+    'synchronization_time': 'synchronization time'.title(),
+    'pooling_time': 'pooling time'.title(),
+    'lagging_time': 'lagging time'.title(),
+    'flow_time': 'flow time'.title(),
+    'act_freq': 'activity frequency'.title(),
+    'object_count': 'object count'.title(),
+    'arc_freq': 'arc frequency'.title()
 }
 
 PERFORMANCE_AGGREGATION_NAME_MAP = {
@@ -85,10 +98,10 @@ PERFORMANCE_AGGREGATION_NAME_MAP = {
 
 REPLAY_DIAGNOSTICS_MAP = {
     # AvailableDiagnostics.ACT_FREQ.value: 'replayed_act_freq',
-    # AvailableDiagnostics.AVG_GROUP_SIZE.value: '',
-    # AvailableDiagnostics.MED_GROUP_SIZE.value: '',
-    # AvailableDiagnostics.MIN_GROUP_SIZE.value: '',
-    # AvailableDiagnostics.MAX_GROUP_SIZE.value: '',
+    # AvailableDiagnostics.AVG_object_count.value: '',
+    # AvailableDiagnostics.MED_object_count.value: '',
+    # AvailableDiagnostics.MIN_object_count.value: '',
+    # AvailableDiagnostics.MAX_object_count.value: '',
     # AvailableDiagnostics.ARC_FREQ.value: 'replayed_arc_frequency',
     # AvailableDiagnostics.AVG_SOJOURN_TIME.value: "replayed_performance_mean",
     # AvailableDiagnostics.MED_SOJOURN_TIME.value: "replayed_performance_median",

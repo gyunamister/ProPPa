@@ -478,6 +478,18 @@ pattern_graph_stylesheet = [
             # Default curve-If it is style, the arrow will not be displayed, so specify it
             'curve-style': 'bezier',
             'label': 'data(label)',
+            'text-wrap': 'wrap',
             'color': '#008B80'
         }
-    }]
+    },
+    {
+        "selector": '.loop',
+        "style": {
+            'loop-direction': '-90deg',
+            'loop-sweep': '-25deg',
+            'control-point-step-size': '100'
+            # 'target-endpoint': 'outside-to-line',
+            # 'source-endpoint': 'outside-to-line',
+        }
+    }
+]

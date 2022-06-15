@@ -1,5 +1,7 @@
+import base64
 import datetime
 from datetime import date
+import hashlib
 
 from backend.components.misc import container, single_row, button, show_title_maker, show_button_id, global_signal_id_maker, temp_jobs_store_id_maker, global_form_load_signal_id_maker
 import dash_interactive_graphviz
@@ -9,20 +11,21 @@ import dash_core_components as dcc
 import dash_bootstrap_components as dbc
 from backend.app import app
 import dash
-from backend.param.constants import PATTERN_TITLE, GLOBAL_FORM_SIGNAL, PATTERN_URL, PERF_ANALYSIS_TITLE, MONITORING_TITLE
-
+from backend.param.constants import PATTERN_TITLE, GLOBAL_FORM_SIGNAL, PATTERN_URL, PERF_ANALYSIS_TITLE, MONITORING_TITLE, JSON, NA
+from dtween.util.util import DIAGNOSTICS_NAME_MAP, PERFORMANCE_AGGREGATION_NAME_MAP
 from dtween.available.constants import COMP_OPERATORS
 
-from backend.util import run_task, read_global_signal_value, no_update, pattern_graph_stylesheet
-from backend.tasks.tasks import get_remote_data, evaluate_pattern_graphs
+from backend.util import run_task, read_global_signal_value, no_update, pattern_graph_stylesheet, parse_contents, build_json_param
+from backend.tasks.tasks import get_remote_data, evaluate_pattern_graphs, parse_data, discover_ocpn, retrieve_eocpn
 from dtween.available.available import AvailableTasks, AvailableDiagnostics, DefaultDiagnostics, AvailablePerformanceAggregation, AvailablePerformance, AvailableFrequency
 from flask import request
 from ocpa.visualization.oc_petri_net import factory as ocpn_vis_factory
 from ocpa.objects.log.converter import factory as ocel_converter_factory
 from ocpa.visualization.pattern_graph import algorithm as pattern_graph_viz_factory
+from backend.param.styles import LINK_CONTENT_STYLE, CENTER_DASHED_BOX_STYLE
 
 import dash_cytoscape as cyto
-import pandas as pd
+import dash_daq as daq
 
 
 monitoring_load_event_log_button_title = "load event log".title()
@@ -64,27 +67,81 @@ monitoring_ecopn_view = dbc.Row(
 )
 
 monitoring_buttons = [
-    dcc.Upload(button(monitoring_load_event_log_button_title,
-                      show_title_maker, show_button_id)),
+    # dcc.Upload(button(monitoring_load_event_log_button_title,
+    #                   show_title_maker, show_button_id)),
+    dcc.Upload(
+        id='upload-monitoring-data',
+        children=html.Div([
+            'Drag and Drop or ', html.A(
+                'Select a OCEL JSON File')
+        ],
+            style=LINK_CONTENT_STYLE),
+        style=CENTER_DASHED_BOX_STYLE,
+        multiple=False
+    ),
+    html.H4(id='monitoring-data-label'),
     button(monitoring_load_pattern_graphs_button_title,
            show_title_maker, show_button_id),
     button(monitoring_evaluate_button_title, show_title_maker, show_button_id),
 ]
+
+
+def create_result_card(pg_name, exist, messages):
+    if exist:
+        printed_message = ""
+        for message in messages:
+            printed_message += f'- {message} \n'
+        result_card = dbc.Card(
+            dbc.CardBody(
+                [
+                    html.H2(f"{pg_name}", className="card-title"),
+                    daq.Indicator(
+                        label=f"Exist",
+                        color='#cc3300',
+                        value=True
+                    ),
+                    # html.P(
+                    #     f"{printed_message}",
+                    #     className="card-text",
+                    # ),
+                    dcc.Markdown(
+                        f"{printed_message}"
+                    )
+                ]
+            )
+        )
+    else:
+        result_card = dbc.Card(
+            dbc.CardBody(
+                [
+                    html.H2(f"{pg_name}", className="card-title"),
+                    daq.Indicator(
+                        label=f"Not exist",
+                        color='#339900',
+                        value=False
+                    )
+                ]
+            )
+        )
+    return dbc.Col(result_card)
+
 
 monitoring_results_and_search_pattern_graph = dbc.Row(
     [
         dbc.Col(
             [
                 html.H2('Monitoring Results', id='monitoring-results-label'),
-                dcc.Markdown(id='monitoring-results-markdown')
+                html.Div(id='monitoring-results'),
+
             ], width=6
         ),
         dbc.Col(
             [
-                html.H2('Search Pattern Graphs',
+                html.H2('Loaded Pattern Graphs',
                         id='search-pattern-graph-label'),
                 dcc.Dropdown(
-                    id='selected-monitoring-pattern-graph-dropdown'
+                    id='selected-monitoring-pattern-graph-dropdown',
+                    placeholder='Select Pattern Graph'
                 ),
                 cyto.Cytoscape(
                     id='monitoring-selected-pattern-graph-view',
@@ -99,11 +156,12 @@ monitoring_results_and_search_pattern_graph = dbc.Row(
 )
 
 
-page_layout = container('Designing Problem Patterns',
+page_layout = container('Monitoring Process-Centric Problem Patterns',
                         [
                             single_row(html.Div(monitoring_buttons)),
                             html.Hr(),
                             monitoring_results_and_search_pattern_graph,
+                            html.Hr(),
                             monitoring_ecopn_view,
                         ]
                         )
@@ -117,37 +175,6 @@ page_layout = container('Designing Problem Patterns',
 def show_ocpn(value):
     if value is not None:
         return value, "dot"
-    return dash.no_update
-
-
-@ app.callback(
-    Output('gv-monitoring-eocpn-view-dot', 'data'),
-    Input(show_button_id(monitoring_evaluate_button_title), 'n_clicks'),
-    State(global_form_load_signal_id_maker(GLOBAL_FORM_SIGNAL), 'children'),
-    State(temp_jobs_store_id_maker(PERF_ANALYSIS_TITLE), 'data')
-)
-def load_ocpn(n_load, value, perf_jobs):
-    ctx = dash.callback_context
-    if not ctx.triggered:
-        button_id = 'No clicks yet'
-        button_value = None
-    else:
-        button_id = ctx.triggered[0]['prop_id'].split('.')[0]
-        button_value = ctx.triggered[0]['value']
-
-    if button_value is None:
-        return dash.no_update
-
-    if button_id == show_button_id(monitoring_evaluate_button_title):
-        user = request.authorization['username']
-        log_hash, date = read_global_signal_value(value)
-        eocpn = get_remote_data(user, log_hash, perf_jobs,
-                                AvailableTasks.OPERA.value)
-        gviz = ocpn_vis_factory.apply(
-            eocpn.ocpn, diagnostics=eocpn.diagnostics, variant="annotated_with_opera")
-        eocpn_dot = str(gviz)
-        return eocpn_dot
-
     return dash.no_update
 
 
@@ -277,9 +304,9 @@ def show_selected(selected, value, perf_jobs):
         selected_diag = ocpn.diagnostics[selected]
 
         plate_frames = [html.H3(f"Performance @ {selected}")]
-        if 'group_size_hist' in selected_diag:
+        if 'object_count' in selected_diag:
             plate_frames.append(create_2d_plate(
-                'Number of objects', selected_diag['group_size_hist']))
+                'Number of objects', selected_diag['object_count']))
             plate_frames.append(html.Br())
 
         if 'waiting_time' in selected_diag:
@@ -328,7 +355,7 @@ def show_selected(selected, value, perf_jobs):
     State(global_form_load_signal_id_maker(GLOBAL_FORM_SIGNAL), 'children'),
     State(temp_jobs_store_id_maker(PATTERN_TITLE), 'data'),
 )
-def show_selected(selected, value, pattern_jobs):
+def callback_viz_selected_pattern(selected, value, pattern_jobs):
     if selected is not None:
         user = request.authorization['username']
         log_hash, date = read_global_signal_value(value)
@@ -377,13 +404,17 @@ def add_pattern(n_load_pg, value, pattern_jobs):
 
 @ app.callback(
     Output(temp_jobs_store_id_maker(MONITORING_TITLE), 'data'),
-    Output('monitoring-results-markdown', 'children'),
+    Output('monitoring-data-label', 'children'),
+    Output('monitoring-results', 'children'),
+    Output('gv-monitoring-eocpn-view-dot', 'data'),
     Input(show_button_id(monitoring_evaluate_button_title), 'n_clicks'),
+    Input('upload-monitoring-data', 'contents'),
+    State('upload-monitoring-data', 'filename'),
     State(global_form_load_signal_id_maker(GLOBAL_FORM_SIGNAL), 'children'),
-    State(temp_jobs_store_id_maker(PERF_ANALYSIS_TITLE), 'data'),
-    State(temp_jobs_store_id_maker(PATTERN_TITLE), 'data')
+    State(temp_jobs_store_id_maker(PATTERN_TITLE), 'data'),
+    State(temp_jobs_store_id_maker(MONITORING_TITLE), 'data'),
 )
-def monitor(n_load_pg, value, perf_jobs, pattern_jobs):
+def monitor(n_load_pg, content, filename, value, pattern_jobs, monitoring_jobs):
     ctx = dash.callback_context
     if not ctx.triggered:
         button_id = 'No clicks yet'
@@ -393,28 +424,66 @@ def monitor(n_load_pg, value, perf_jobs, pattern_jobs):
         button_value = ctx.triggered[0]['value']
 
     if button_value is None:
-        return no_update(2)
+        return no_update(4)
 
     if button_id == show_button_id(monitoring_evaluate_button_title):
         user = request.authorization['username']
         log_hash, date = read_global_signal_value(value)
-        eocpn = get_remote_data(user, log_hash, perf_jobs,
+        ocel = get_remote_data(user, log_hash, monitoring_jobs,
+                               AvailableTasks.UPLOAD_MONITORING_DATA.value)
+        print(ocel)
+
+        task_id = run_task(
+            monitoring_jobs, log_hash, AvailableTasks.DESIGN.value, discover_ocpn, data=ocel)
+        ocpn = get_remote_data(user, log_hash, monitoring_jobs,
+                               AvailableTasks.DESIGN.value)
+        print(ocpn)
+        diag_params = dict()
+        diag_params['measures'] = [DIAGNOSTICS_NAME_MAP[d]
+                                   for d in [e.value for e in AvailableDiagnostics]]
+        diag_params['agg'] = [PERFORMANCE_AGGREGATION_NAME_MAP[a]
+                              for a in [e.value for e in AvailablePerformanceAggregation]]
+
+        task_id = run_task(
+            monitoring_jobs, log_hash, AvailableTasks.OPERA.value, retrieve_eocpn, ocpn=ocpn, ocel=ocel, parameters=diag_params)
+        eocpn = get_remote_data(user, log_hash, monitoring_jobs,
                                 AvailableTasks.OPERA.value)
+        print(eocpn)
         pattern_graphs = get_remote_data(user, log_hash, pattern_jobs,
                                          AvailableTasks.DESIGN_PROBLEM_PATTERN.value)
         task_id = run_task(
-            pattern_jobs, log_hash, AvailableTasks.EVALUATE_PATTERN.value, evaluate_pattern_graphs, pattern_graphs=pattern_graphs, eocpn=eocpn)
+            monitoring_jobs, log_hash, AvailableTasks.EVALUATE_PATTERN.value, evaluate_pattern_graphs, pattern_graphs=pattern_graphs, ocel=ocel, eocpn=eocpn)
 
-        eval_results = get_remote_data(user, log_hash, pattern_jobs,
-                                       AvailableTasks.EVALUATE_PATTERN.value)
-        print(eval_results)
-        vis_results = ""
-        for i, pg_name in enumerate(eval_results):
-            vis_results += f'## {i+1}. {pg_name} \n'
-            for eval in eval_results[pg_name]:
-                vis_results += f'- {eval} \n'
-        print(vis_results)
+        results = get_remote_data(user, log_hash, monitoring_jobs,
+                                  AvailableTasks.EVALUATE_PATTERN.value)
+        print(results)
+        monitoring_results = []
+        for i, pg_name in enumerate(results):
+            exist = results[pg_name][0]
+            message = results[pg_name][1]
+            monitoring_results.append(
+                create_result_card(pg_name, exist, message))
 
-        return pattern_jobs, vis_results
+        gviz = ocpn_vis_factory.apply(
+            eocpn.ocpn, diagnostics=eocpn.diagnostics, variant="annotated_with_opera")
+        eocpn_dot = str(gviz)
 
-    return no_update(2)
+        return dash.no_update, dash.no_update, monitoring_results, eocpn_dot
+    elif content is not None:
+        user = request.authorization['username']
+        log_hash, date = read_global_signal_value(value)
+        # compute value and send a signal when done
+        content_type, content_string = content.split(',')
+
+        data_format = JSON
+        out, success = parse_contents(content, data_format)
+        if success:
+            json_param = build_json_param(NA)
+            task_id = run_task(pattern_jobs, log_hash, AvailableTasks.UPLOAD_MONITORING_DATA.value, parse_data,
+                               data=out,
+                               data_type=data_format,
+                               parse_param=json_param)
+        monitoring_data_label = f'Currently uploaded: {filename}'
+        return pattern_jobs, monitoring_data_label, *no_update(2)
+
+    return no_update(4)

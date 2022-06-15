@@ -172,7 +172,7 @@ design_content = dbc.Row(
     style={"height": "100vh"},
 )
 
-page_layout = container('Discover Object-Centric Petri Nets',
+page_layout = container('Discovering Object-Centric Petri Nets',
                         [
                             buttons,
                             design_content
