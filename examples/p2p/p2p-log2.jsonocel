@@ -1,0 +1,6346 @@
+{
+    "ocel:global-log": {
+        "ocel:attribute-names": [
+            []
+        ],
+        "ocel:object-types": [
+            [
+                "PURCHREQ",
+                "PURCHORD",
+                "GDSRCPT",
+                "MATERIAL",
+                "INVOICE"
+            ]
+        ],
+        "ocel:version": [
+            "1.0"
+        ],
+        "ocel:ordering": [
+            "timestamp"
+        ]
+    },
+    "ocel:events": {
+        "0": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-15T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ0",
+                "MATERIAL0",
+                "MATERIAL1",
+                "MATERIAL2"
+            ],
+            "ocel:vmap": {}
+        },
+        "1": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-18T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ0",
+                "PURCHORD0",
+                "MATERIAL0",
+                "MATERIAL1",
+                "MATERIAL2"
+            ],
+            "ocel:vmap": {}
+        },
+        "2": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-19T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD0",
+                "MATERIAL0",
+                "MATERIAL1",
+                "MATERIAL2",
+                "GDSRCPT0"
+            ],
+            "ocel:vmap": {}
+        },
+        "3": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-10-20T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD0",
+                "MATERIAL0",
+                "MATERIAL1",
+                "MATERIAL2",
+                "GDSRCPT0"
+            ],
+            "ocel:vmap": {}
+        },
+        "4": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-10-25T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD0",
+                "INVOICE0"
+            ],
+            "ocel:vmap": {}
+        },
+        "5": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-10-25T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL0",
+                "MATERIAL1",
+                "MATERIAL2"
+            ],
+            "ocel:vmap": {}
+        },
+        "6": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-10-25T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL0",
+                "MATERIAL1",
+                "MATERIAL2"
+            ],
+            "ocel:vmap": {}
+        },
+        "7": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-10-26T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL0",
+                "MATERIAL1",
+                "MATERIAL2"
+            ],
+            "ocel:vmap": {}
+        },
+        "8": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-10-26T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD0",
+                "GDSRCPT0",
+                "INVOICE0"
+            ],
+            "ocel:vmap": {}
+        },
+        "9": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-15T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ1",
+                "MATERIAL3",
+                "MATERIAL4"
+            ],
+            "ocel:vmap": {}
+        },
+        "10": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-18T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ1",
+                "PURCHORD1",
+                "MATERIAL3",
+                "MATERIAL4"
+            ],
+            "ocel:vmap": {}
+        },
+        "11": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-19T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD1",
+                "MATERIAL3",
+                "MATERIAL4",
+                "GDSRCPT1"
+            ],
+            "ocel:vmap": {}
+        },
+        "12": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-10-20T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD1",
+                "MATERIAL3",
+                "MATERIAL4",
+                "GDSRCPT1"
+            ],
+            "ocel:vmap": {}
+        },
+        "13": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-10-25T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL3",
+                "MATERIAL4"
+            ],
+            "ocel:vmap": {}
+        },
+        "14": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-10-25T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD1",
+                "INVOICE1"
+            ],
+            "ocel:vmap": {}
+        },
+        "15": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-10-25T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL3",
+                "MATERIAL4"
+            ],
+            "ocel:vmap": {}
+        },
+        "16": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-10-26T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD1",
+                "GDSRCPT1",
+                "INVOICE1"
+            ],
+            "ocel:vmap": {}
+        },
+        "17": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-10-26T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL3",
+                "MATERIAL4"
+            ],
+            "ocel:vmap": {}
+        },
+        "18": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-18T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ2",
+                "MATERIAL5",
+                "MATERIAL6"
+            ],
+            "ocel:vmap": {}
+        },
+        "19": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-19T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ2",
+                "PURCHORD2",
+                "MATERIAL5",
+                "MATERIAL6"
+            ],
+            "ocel:vmap": {}
+        },
+        "20": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-20T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD2",
+                "MATERIAL5",
+                "MATERIAL6",
+                "GDSRCPT2"
+            ],
+            "ocel:vmap": {}
+        },
+        "21": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-10-25T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD2",
+                "MATERIAL5",
+                "MATERIAL6",
+                "GDSRCPT2"
+            ],
+            "ocel:vmap": {}
+        },
+        "22": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-10-28T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL5",
+                "MATERIAL6"
+            ],
+            "ocel:vmap": {}
+        },
+        "23": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-10-28T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL5",
+                "MATERIAL6"
+            ],
+            "ocel:vmap": {}
+        },
+        "24": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-10-28T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD2",
+                "INVOICE2"
+            ],
+            "ocel:vmap": {}
+        },
+        "25": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-10-29T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL5",
+                "MATERIAL6"
+            ],
+            "ocel:vmap": {}
+        },
+        "26": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-10-29T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD2",
+                "GDSRCPT2",
+                "INVOICE2"
+            ],
+            "ocel:vmap": {}
+        },
+        "27": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-18T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ3",
+                "MATERIAL7"
+            ],
+            "ocel:vmap": {}
+        },
+        "28": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-19T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ3",
+                "PURCHORD3",
+                "MATERIAL7"
+            ],
+            "ocel:vmap": {}
+        },
+        "29": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-20T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD3",
+                "MATERIAL7",
+                "GDSRCPT3"
+            ],
+            "ocel:vmap": {}
+        },
+        "30": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-10-25T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD3",
+                "MATERIAL7",
+                "GDSRCPT3"
+            ],
+            "ocel:vmap": {}
+        },
+        "31": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-10-28T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD3",
+                "INVOICE3"
+            ],
+            "ocel:vmap": {}
+        },
+        "32": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-10-28T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL7"
+            ],
+            "ocel:vmap": {}
+        },
+        "33": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-10-28T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL7"
+            ],
+            "ocel:vmap": {}
+        },
+        "34": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-10-29T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL7"
+            ],
+            "ocel:vmap": {}
+        },
+        "35": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-10-29T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD3",
+                "GDSRCPT3",
+                "INVOICE3"
+            ],
+            "ocel:vmap": {}
+        },
+        "36": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-19T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ4",
+                "MATERIAL8",
+                "MATERIAL9"
+            ],
+            "ocel:vmap": {}
+        },
+        "37": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-20T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ4",
+                "PURCHORD4",
+                "MATERIAL8",
+                "MATERIAL9"
+            ],
+            "ocel:vmap": {}
+        },
+        "38": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-21T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD4",
+                "MATERIAL8",
+                "MATERIAL9",
+                "GDSRCPT4"
+            ],
+            "ocel:vmap": {}
+        },
+        "39": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-10-28T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD4",
+                "MATERIAL8",
+                "MATERIAL9",
+                "GDSRCPT4"
+            ],
+            "ocel:vmap": {}
+        },
+        "40": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-01T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL8",
+                "MATERIAL9"
+            ],
+            "ocel:vmap": {}
+        },
+        "41": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-01T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL8",
+                "MATERIAL9"
+            ],
+            "ocel:vmap": {}
+        },
+        "42": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-01T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD4",
+                "INVOICE4",
+                "INVOICE5"
+            ],
+            "ocel:vmap": {}
+        },
+        "43": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-02T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD4",
+                "GDSRCPT4",
+                "INVOICE4",
+                "INVOICE5"
+            ],
+            "ocel:vmap": {}
+        },
+        "44": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-02T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL8",
+                "MATERIAL9"
+            ],
+            "ocel:vmap": {}
+        },
+        "45": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-19T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ5",
+                "MATERIAL10"
+            ],
+            "ocel:vmap": {}
+        },
+        "46": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-20T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ5",
+                "PURCHORD5",
+                "MATERIAL10"
+            ],
+            "ocel:vmap": {}
+        },
+        "47": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-21T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD5",
+                "MATERIAL10",
+                "GDSRCPT5"
+            ],
+            "ocel:vmap": {}
+        },
+        "48": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-10-28T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD5",
+                "MATERIAL10",
+                "GDSRCPT5"
+            ],
+            "ocel:vmap": {}
+        },
+        "49": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-01T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL10"
+            ],
+            "ocel:vmap": {}
+        },
+        "50": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-01T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD5",
+                "INVOICE6",
+                "INVOICE7"
+            ],
+            "ocel:vmap": {}
+        },
+        "51": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-01T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL10"
+            ],
+            "ocel:vmap": {}
+        },
+        "52": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-02T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD5",
+                "GDSRCPT5",
+                "INVOICE6",
+                "INVOICE7"
+            ],
+            "ocel:vmap": {}
+        },
+        "53": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-02T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL10"
+            ],
+            "ocel:vmap": {}
+        },
+        "54": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-20T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ6",
+                "MATERIAL11",
+                "MATERIAL12"
+            ],
+            "ocel:vmap": {}
+        },
+        "55": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-21T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ6",
+                "PURCHORD6",
+                "MATERIAL11",
+                "MATERIAL12"
+            ],
+            "ocel:vmap": {}
+        },
+        "56": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-22T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD6",
+                "MATERIAL11",
+                "MATERIAL12",
+                "GDSRCPT6"
+            ],
+            "ocel:vmap": {}
+        },
+        "57": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-01T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD6",
+                "MATERIAL11",
+                "MATERIAL12",
+                "GDSRCPT6"
+            ],
+            "ocel:vmap": {}
+        },
+        "58": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-04T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL11",
+                "MATERIAL12"
+            ],
+            "ocel:vmap": {}
+        },
+        "59": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-04T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL11",
+                "MATERIAL12"
+            ],
+            "ocel:vmap": {}
+        },
+        "60": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-04T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD6",
+                "INVOICE8"
+            ],
+            "ocel:vmap": {}
+        },
+        "61": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-05T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD6",
+                "GDSRCPT6",
+                "INVOICE8"
+            ],
+            "ocel:vmap": {}
+        },
+        "62": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-05T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL11",
+                "MATERIAL12"
+            ],
+            "ocel:vmap": {}
+        },
+        "63": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-20T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ7",
+                "MATERIAL13",
+                "MATERIAL14"
+            ],
+            "ocel:vmap": {}
+        },
+        "64": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-21T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ7",
+                "PURCHORD7",
+                "MATERIAL13",
+                "MATERIAL14"
+            ],
+            "ocel:vmap": {}
+        },
+        "65": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-22T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD7",
+                "MATERIAL13",
+                "MATERIAL14",
+                "GDSRCPT7"
+            ],
+            "ocel:vmap": {}
+        },
+        "66": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-01T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD7",
+                "MATERIAL13",
+                "MATERIAL14",
+                "GDSRCPT7"
+            ],
+            "ocel:vmap": {}
+        },
+        "67": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-04T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL13",
+                "MATERIAL14"
+            ],
+            "ocel:vmap": {}
+        },
+        "68": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-04T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD7",
+                "INVOICE9"
+            ],
+            "ocel:vmap": {}
+        },
+        "69": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-04T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL13",
+                "MATERIAL14"
+            ],
+            "ocel:vmap": {}
+        },
+        "70": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-05T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD7",
+                "GDSRCPT7",
+                "INVOICE9"
+            ],
+            "ocel:vmap": {}
+        },
+        "71": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-05T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL13",
+                "MATERIAL14"
+            ],
+            "ocel:vmap": {}
+        },
+        "72": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-21T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ8",
+                "MATERIAL15",
+                "MATERIAL16"
+            ],
+            "ocel:vmap": {}
+        },
+        "73": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-22T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ8",
+                "PURCHORD8",
+                "MATERIAL15",
+                "MATERIAL16"
+            ],
+            "ocel:vmap": {}
+        },
+        "74": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-25T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD8",
+                "MATERIAL15",
+                "MATERIAL16",
+                "GDSRCPT8"
+            ],
+            "ocel:vmap": {}
+        },
+        "75": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-04T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD8",
+                "MATERIAL15",
+                "MATERIAL16",
+                "GDSRCPT8"
+            ],
+            "ocel:vmap": {}
+        },
+        "76": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-08T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL15",
+                "MATERIAL16"
+            ],
+            "ocel:vmap": {}
+        },
+        "77": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-08T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL15",
+                "MATERIAL16"
+            ],
+            "ocel:vmap": {}
+        },
+        "78": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-08T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD8",
+                "INVOICE10"
+            ],
+            "ocel:vmap": {}
+        },
+        "79": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-09T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL15",
+                "MATERIAL16"
+            ],
+            "ocel:vmap": {}
+        },
+        "80": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-09T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD8",
+                "GDSRCPT8",
+                "INVOICE10"
+            ],
+            "ocel:vmap": {}
+        },
+        "81": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-21T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ9",
+                "MATERIAL17"
+            ],
+            "ocel:vmap": {}
+        },
+        "82": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-22T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ9",
+                "PURCHORD9",
+                "MATERIAL17"
+            ],
+            "ocel:vmap": {}
+        },
+        "83": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-25T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD9",
+                "MATERIAL17",
+                "GDSRCPT9"
+            ],
+            "ocel:vmap": {}
+        },
+        "84": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-04T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD9",
+                "MATERIAL17",
+                "GDSRCPT9"
+            ],
+            "ocel:vmap": {}
+        },
+        "85": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-08T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL17"
+            ],
+            "ocel:vmap": {}
+        },
+        "86": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-08T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL17"
+            ],
+            "ocel:vmap": {}
+        },
+        "87": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-08T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD9",
+                "INVOICE11",
+                "INVOICE12"
+            ],
+            "ocel:vmap": {}
+        },
+        "88": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-09T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD9",
+                "GDSRCPT9",
+                "INVOICE11",
+                "INVOICE12"
+            ],
+            "ocel:vmap": {}
+        },
+        "89": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-09T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL17"
+            ],
+            "ocel:vmap": {}
+        },
+        "90": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-22T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ10",
+                "MATERIAL18",
+                "MATERIAL19"
+            ],
+            "ocel:vmap": {}
+        },
+        "91": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-25T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ10",
+                "PURCHORD10",
+                "MATERIAL18",
+                "MATERIAL19"
+            ],
+            "ocel:vmap": {}
+        },
+        "92": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-26T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD10",
+                "MATERIAL18",
+                "MATERIAL19",
+                "GDSRCPT10"
+            ],
+            "ocel:vmap": {}
+        },
+        "93": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-08T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD10",
+                "MATERIAL18",
+                "MATERIAL19",
+                "GDSRCPT10"
+            ],
+            "ocel:vmap": {}
+        },
+        "94": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-11T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL18",
+                "MATERIAL19"
+            ],
+            "ocel:vmap": {}
+        },
+        "95": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-11T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL18",
+                "MATERIAL19"
+            ],
+            "ocel:vmap": {}
+        },
+        "96": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-11T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD10",
+                "INVOICE13",
+                "INVOICE14"
+            ],
+            "ocel:vmap": {}
+        },
+        "97": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-12T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL18",
+                "MATERIAL19"
+            ],
+            "ocel:vmap": {}
+        },
+        "98": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-12T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD10",
+                "GDSRCPT10",
+                "INVOICE13",
+                "INVOICE14"
+            ],
+            "ocel:vmap": {}
+        },
+        "99": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-22T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ11",
+                "MATERIAL20",
+                "MATERIAL21"
+            ],
+            "ocel:vmap": {}
+        },
+        "100": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-25T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ11",
+                "PURCHORD11",
+                "MATERIAL20",
+                "MATERIAL21"
+            ],
+            "ocel:vmap": {}
+        },
+        "101": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-26T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD11",
+                "MATERIAL20",
+                "MATERIAL21",
+                "GDSRCPT11"
+            ],
+            "ocel:vmap": {}
+        },
+        "102": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-08T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD11",
+                "MATERIAL20",
+                "MATERIAL21",
+                "GDSRCPT11"
+            ],
+            "ocel:vmap": {}
+        },
+        "103": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-11T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD11",
+                "INVOICE15"
+            ],
+            "ocel:vmap": {}
+        },
+        "104": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-11T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL20",
+                "MATERIAL21"
+            ],
+            "ocel:vmap": {}
+        },
+        "105": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-11T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL20",
+                "MATERIAL21"
+            ],
+            "ocel:vmap": {}
+        },
+        "106": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-12T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD11",
+                "GDSRCPT11",
+                "INVOICE15"
+            ],
+            "ocel:vmap": {}
+        },
+        "107": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-12T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL20",
+                "MATERIAL21"
+            ],
+            "ocel:vmap": {}
+        },
+        "108": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-25T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ12",
+                "MATERIAL22"
+            ],
+            "ocel:vmap": {}
+        },
+        "109": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-26T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ12",
+                "PURCHORD12",
+                "MATERIAL22"
+            ],
+            "ocel:vmap": {}
+        },
+        "110": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-27T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD12",
+                "MATERIAL22",
+                "GDSRCPT12"
+            ],
+            "ocel:vmap": {}
+        },
+        "111": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-11T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD12",
+                "MATERIAL22",
+                "GDSRCPT12"
+            ],
+            "ocel:vmap": {}
+        },
+        "112": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-15T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL22"
+            ],
+            "ocel:vmap": {}
+        },
+        "113": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-15T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD12",
+                "INVOICE16"
+            ],
+            "ocel:vmap": {}
+        },
+        "114": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-15T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL22"
+            ],
+            "ocel:vmap": {}
+        },
+        "115": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-16T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD12",
+                "GDSRCPT12",
+                "INVOICE16"
+            ],
+            "ocel:vmap": {}
+        },
+        "116": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-16T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL22"
+            ],
+            "ocel:vmap": {}
+        },
+        "117": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-25T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ13",
+                "MATERIAL23",
+                "MATERIAL24",
+                "MATERIAL25"
+            ],
+            "ocel:vmap": {}
+        },
+        "118": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-26T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ13",
+                "PURCHORD13",
+                "MATERIAL23",
+                "MATERIAL24",
+                "MATERIAL25"
+            ],
+            "ocel:vmap": {}
+        },
+        "119": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-27T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD13",
+                "MATERIAL23",
+                "MATERIAL24",
+                "MATERIAL25",
+                "GDSRCPT13"
+            ],
+            "ocel:vmap": {}
+        },
+        "120": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-11T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD13",
+                "MATERIAL23",
+                "MATERIAL24",
+                "MATERIAL25",
+                "GDSRCPT13"
+            ],
+            "ocel:vmap": {}
+        },
+        "121": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-15T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD13",
+                "INVOICE17"
+            ],
+            "ocel:vmap": {}
+        },
+        "122": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-15T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL23",
+                "MATERIAL24",
+                "MATERIAL25"
+            ],
+            "ocel:vmap": {}
+        },
+        "123": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-15T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL23",
+                "MATERIAL24",
+                "MATERIAL25"
+            ],
+            "ocel:vmap": {}
+        },
+        "124": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-16T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL23",
+                "MATERIAL24",
+                "MATERIAL25"
+            ],
+            "ocel:vmap": {}
+        },
+        "125": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-16T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD13",
+                "GDSRCPT13",
+                "INVOICE17"
+            ],
+            "ocel:vmap": {}
+        },
+        "126": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-26T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ14",
+                "MATERIAL26"
+            ],
+            "ocel:vmap": {}
+        },
+        "127": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-27T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ14",
+                "PURCHORD14",
+                "MATERIAL26"
+            ],
+            "ocel:vmap": {}
+        },
+        "128": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-28T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD14",
+                "MATERIAL26",
+                "GDSRCPT14"
+            ],
+            "ocel:vmap": {}
+        },
+        "129": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-15T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD14",
+                "MATERIAL26",
+                "GDSRCPT14"
+            ],
+            "ocel:vmap": {}
+        },
+        "130": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-18T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL26"
+            ],
+            "ocel:vmap": {}
+        },
+        "131": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-18T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD14",
+                "INVOICE18"
+            ],
+            "ocel:vmap": {}
+        },
+        "132": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-18T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL26"
+            ],
+            "ocel:vmap": {}
+        },
+        "133": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-19T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD14",
+                "GDSRCPT14",
+                "INVOICE18"
+            ],
+            "ocel:vmap": {}
+        },
+        "134": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-19T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL26"
+            ],
+            "ocel:vmap": {}
+        },
+        "135": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-26T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ15",
+                "MATERIAL27"
+            ],
+            "ocel:vmap": {}
+        },
+        "136": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-27T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ15",
+                "PURCHORD15",
+                "MATERIAL27"
+            ],
+            "ocel:vmap": {}
+        },
+        "137": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-28T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD15",
+                "MATERIAL27",
+                "GDSRCPT15"
+            ],
+            "ocel:vmap": {}
+        },
+        "138": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-15T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD15",
+                "MATERIAL27",
+                "GDSRCPT15"
+            ],
+            "ocel:vmap": {}
+        },
+        "139": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-18T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL27"
+            ],
+            "ocel:vmap": {}
+        },
+        "140": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-18T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD15",
+                "INVOICE19",
+                "INVOICE20"
+            ],
+            "ocel:vmap": {}
+        },
+        "141": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-18T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL27"
+            ],
+            "ocel:vmap": {}
+        },
+        "142": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-19T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL27"
+            ],
+            "ocel:vmap": {}
+        },
+        "143": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-19T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD15",
+                "GDSRCPT15",
+                "INVOICE19",
+                "INVOICE20"
+            ],
+            "ocel:vmap": {}
+        },
+        "144": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-27T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ16",
+                "MATERIAL28",
+                "MATERIAL29",
+                "MATERIAL30"
+            ],
+            "ocel:vmap": {}
+        },
+        "145": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-28T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ16",
+                "PURCHORD16",
+                "MATERIAL28",
+                "MATERIAL29",
+                "MATERIAL30"
+            ],
+            "ocel:vmap": {}
+        },
+        "146": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-29T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD16",
+                "MATERIAL28",
+                "MATERIAL29",
+                "MATERIAL30",
+                "GDSRCPT16"
+            ],
+            "ocel:vmap": {}
+        },
+        "147": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-18T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD16",
+                "MATERIAL28",
+                "MATERIAL29",
+                "MATERIAL30",
+                "GDSRCPT16"
+            ],
+            "ocel:vmap": {}
+        },
+        "148": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-22T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL28",
+                "MATERIAL29",
+                "MATERIAL30"
+            ],
+            "ocel:vmap": {}
+        },
+        "149": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-22T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL28",
+                "MATERIAL29",
+                "MATERIAL30"
+            ],
+            "ocel:vmap": {}
+        },
+        "150": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-22T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD16",
+                "INVOICE21",
+                "INVOICE22"
+            ],
+            "ocel:vmap": {}
+        },
+        "151": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-23T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD16",
+                "GDSRCPT16",
+                "INVOICE21",
+                "INVOICE22"
+            ],
+            "ocel:vmap": {}
+        },
+        "152": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-23T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL28",
+                "MATERIAL29",
+                "MATERIAL30"
+            ],
+            "ocel:vmap": {}
+        },
+        "153": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-27T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ17",
+                "MATERIAL31",
+                "MATERIAL32",
+                "MATERIAL33"
+            ],
+            "ocel:vmap": {}
+        },
+        "154": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-28T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ17",
+                "PURCHORD17",
+                "MATERIAL31",
+                "MATERIAL32",
+                "MATERIAL33"
+            ],
+            "ocel:vmap": {}
+        },
+        "155": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-10-29T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD17",
+                "MATERIAL31",
+                "MATERIAL32",
+                "MATERIAL33",
+                "GDSRCPT17"
+            ],
+            "ocel:vmap": {}
+        },
+        "156": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-18T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD17",
+                "MATERIAL31",
+                "MATERIAL32",
+                "MATERIAL33",
+                "GDSRCPT17"
+            ],
+            "ocel:vmap": {}
+        },
+        "157": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-22T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL31",
+                "MATERIAL32",
+                "MATERIAL33"
+            ],
+            "ocel:vmap": {}
+        },
+        "158": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-22T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD17",
+                "INVOICE23",
+                "INVOICE24"
+            ],
+            "ocel:vmap": {}
+        },
+        "159": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-22T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL31",
+                "MATERIAL32",
+                "MATERIAL33"
+            ],
+            "ocel:vmap": {}
+        },
+        "160": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-23T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD17",
+                "GDSRCPT17",
+                "INVOICE23",
+                "INVOICE24"
+            ],
+            "ocel:vmap": {}
+        },
+        "161": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-23T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL31",
+                "MATERIAL32",
+                "MATERIAL33"
+            ],
+            "ocel:vmap": {}
+        },
+        "162": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-28T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ18",
+                "MATERIAL34",
+                "MATERIAL35"
+            ],
+            "ocel:vmap": {}
+        },
+        "163": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-29T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ18",
+                "PURCHORD18",
+                "MATERIAL34",
+                "MATERIAL35"
+            ],
+            "ocel:vmap": {}
+        },
+        "164": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-01T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD18",
+                "MATERIAL34",
+                "MATERIAL35",
+                "GDSRCPT18"
+            ],
+            "ocel:vmap": {}
+        },
+        "165": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-22T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD18",
+                "MATERIAL34",
+                "MATERIAL35",
+                "GDSRCPT18"
+            ],
+            "ocel:vmap": {}
+        },
+        "166": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-25T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD18",
+                "INVOICE25",
+                "INVOICE26"
+            ],
+            "ocel:vmap": {}
+        },
+        "167": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-25T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL34",
+                "MATERIAL35"
+            ],
+            "ocel:vmap": {}
+        },
+        "168": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-25T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL34",
+                "MATERIAL35"
+            ],
+            "ocel:vmap": {}
+        },
+        "169": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-26T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL34",
+                "MATERIAL35"
+            ],
+            "ocel:vmap": {}
+        },
+        "170": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-26T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD18",
+                "GDSRCPT18",
+                "INVOICE25",
+                "INVOICE26"
+            ],
+            "ocel:vmap": {}
+        },
+        "171": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-28T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ19",
+                "MATERIAL36",
+                "MATERIAL37",
+                "MATERIAL38"
+            ],
+            "ocel:vmap": {}
+        },
+        "172": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-10-29T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ19",
+                "PURCHORD19",
+                "MATERIAL36",
+                "MATERIAL37",
+                "MATERIAL38"
+            ],
+            "ocel:vmap": {}
+        },
+        "173": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-01T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD19",
+                "MATERIAL36",
+                "MATERIAL37",
+                "MATERIAL38",
+                "GDSRCPT19"
+            ],
+            "ocel:vmap": {}
+        },
+        "174": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-22T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD19",
+                "MATERIAL36",
+                "MATERIAL37",
+                "MATERIAL38",
+                "GDSRCPT19"
+            ],
+            "ocel:vmap": {}
+        },
+        "175": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-25T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL36",
+                "MATERIAL37",
+                "MATERIAL38"
+            ],
+            "ocel:vmap": {}
+        },
+        "176": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-25T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL36",
+                "MATERIAL37",
+                "MATERIAL38"
+            ],
+            "ocel:vmap": {}
+        },
+        "177": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-25T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD19",
+                "INVOICE27",
+                "INVOICE28"
+            ],
+            "ocel:vmap": {}
+        },
+        "178": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-26T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD19",
+                "GDSRCPT19",
+                "INVOICE27",
+                "INVOICE28"
+            ],
+            "ocel:vmap": {}
+        },
+        "179": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-26T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL36",
+                "MATERIAL37",
+                "MATERIAL38"
+            ],
+            "ocel:vmap": {}
+        },
+        "180": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-29T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ20",
+                "MATERIAL39",
+                "MATERIAL40"
+            ],
+            "ocel:vmap": {}
+        },
+        "181": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-01T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ20",
+                "PURCHORD20",
+                "MATERIAL39",
+                "MATERIAL40"
+            ],
+            "ocel:vmap": {}
+        },
+        "182": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-02T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD20",
+                "MATERIAL39",
+                "MATERIAL40",
+                "GDSRCPT20"
+            ],
+            "ocel:vmap": {}
+        },
+        "183": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-25T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD20",
+                "MATERIAL39",
+                "MATERIAL40",
+                "GDSRCPT20"
+            ],
+            "ocel:vmap": {}
+        },
+        "184": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-29T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD20",
+                "INVOICE29"
+            ],
+            "ocel:vmap": {}
+        },
+        "185": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-29T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL39",
+                "MATERIAL40"
+            ],
+            "ocel:vmap": {}
+        },
+        "186": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-29T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL39",
+                "MATERIAL40"
+            ],
+            "ocel:vmap": {}
+        },
+        "187": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-30T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD20",
+                "GDSRCPT20",
+                "INVOICE29"
+            ],
+            "ocel:vmap": {}
+        },
+        "188": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-30T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL39",
+                "MATERIAL40"
+            ],
+            "ocel:vmap": {}
+        },
+        "189": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-10-29T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ21",
+                "MATERIAL41"
+            ],
+            "ocel:vmap": {}
+        },
+        "190": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-01T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ21",
+                "PURCHORD21",
+                "MATERIAL41"
+            ],
+            "ocel:vmap": {}
+        },
+        "191": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-02T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD21",
+                "MATERIAL41",
+                "GDSRCPT21"
+            ],
+            "ocel:vmap": {}
+        },
+        "192": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-25T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD21",
+                "MATERIAL41",
+                "GDSRCPT21"
+            ],
+            "ocel:vmap": {}
+        },
+        "193": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-11-29T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL41"
+            ],
+            "ocel:vmap": {}
+        },
+        "194": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-11-29T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD21",
+                "INVOICE30"
+            ],
+            "ocel:vmap": {}
+        },
+        "195": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-11-29T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL41"
+            ],
+            "ocel:vmap": {}
+        },
+        "196": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-11-30T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD21",
+                "GDSRCPT21",
+                "INVOICE30"
+            ],
+            "ocel:vmap": {}
+        },
+        "197": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-11-30T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL41"
+            ],
+            "ocel:vmap": {}
+        },
+        "198": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-01T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ22",
+                "MATERIAL42",
+                "MATERIAL43",
+                "MATERIAL44"
+            ],
+            "ocel:vmap": {}
+        },
+        "199": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-02T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ22",
+                "PURCHORD22",
+                "MATERIAL42",
+                "MATERIAL43",
+                "MATERIAL44"
+            ],
+            "ocel:vmap": {}
+        },
+        "200": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-03T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD22",
+                "MATERIAL42",
+                "MATERIAL43",
+                "MATERIAL44",
+                "GDSRCPT22"
+            ],
+            "ocel:vmap": {}
+        },
+        "201": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-29T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD22",
+                "MATERIAL42",
+                "MATERIAL43",
+                "MATERIAL44",
+                "GDSRCPT22"
+            ],
+            "ocel:vmap": {}
+        },
+        "202": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-02T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL42",
+                "MATERIAL43",
+                "MATERIAL44"
+            ],
+            "ocel:vmap": {}
+        },
+        "203": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-02T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD22",
+                "INVOICE31"
+            ],
+            "ocel:vmap": {}
+        },
+        "204": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-02T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL42",
+                "MATERIAL43",
+                "MATERIAL44"
+            ],
+            "ocel:vmap": {}
+        },
+        "205": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-03T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD22",
+                "GDSRCPT22",
+                "INVOICE31"
+            ],
+            "ocel:vmap": {}
+        },
+        "206": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-03T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL42",
+                "MATERIAL43",
+                "MATERIAL44"
+            ],
+            "ocel:vmap": {}
+        },
+        "207": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-01T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ23",
+                "MATERIAL45",
+                "MATERIAL46"
+            ],
+            "ocel:vmap": {}
+        },
+        "208": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-02T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ23",
+                "PURCHORD23",
+                "MATERIAL45",
+                "MATERIAL46"
+            ],
+            "ocel:vmap": {}
+        },
+        "209": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-03T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD23",
+                "MATERIAL45",
+                "MATERIAL46",
+                "GDSRCPT23"
+            ],
+            "ocel:vmap": {}
+        },
+        "210": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-11-29T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD23",
+                "MATERIAL45",
+                "MATERIAL46",
+                "GDSRCPT23"
+            ],
+            "ocel:vmap": {}
+        },
+        "211": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-02T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD23",
+                "INVOICE32"
+            ],
+            "ocel:vmap": {}
+        },
+        "212": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-02T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL45",
+                "MATERIAL46"
+            ],
+            "ocel:vmap": {}
+        },
+        "213": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-02T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL45",
+                "MATERIAL46"
+            ],
+            "ocel:vmap": {}
+        },
+        "214": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-03T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL45",
+                "MATERIAL46"
+            ],
+            "ocel:vmap": {}
+        },
+        "215": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-03T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD23",
+                "GDSRCPT23",
+                "INVOICE32"
+            ],
+            "ocel:vmap": {}
+        },
+        "216": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-02T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ24",
+                "MATERIAL47"
+            ],
+            "ocel:vmap": {}
+        },
+        "217": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-03T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ24",
+                "PURCHORD24",
+                "MATERIAL47"
+            ],
+            "ocel:vmap": {}
+        },
+        "218": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-04T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD24",
+                "MATERIAL47",
+                "GDSRCPT24"
+            ],
+            "ocel:vmap": {}
+        },
+        "219": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-02T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD24",
+                "MATERIAL47",
+                "GDSRCPT24"
+            ],
+            "ocel:vmap": {}
+        },
+        "220": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-06T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL47"
+            ],
+            "ocel:vmap": {}
+        },
+        "221": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-06T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL47"
+            ],
+            "ocel:vmap": {}
+        },
+        "222": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-06T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD24",
+                "INVOICE33",
+                "INVOICE34"
+            ],
+            "ocel:vmap": {}
+        },
+        "223": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-07T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD24",
+                "GDSRCPT24",
+                "INVOICE33",
+                "INVOICE34"
+            ],
+            "ocel:vmap": {}
+        },
+        "224": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-07T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL47"
+            ],
+            "ocel:vmap": {}
+        },
+        "225": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-02T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ25",
+                "MATERIAL48"
+            ],
+            "ocel:vmap": {}
+        },
+        "226": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-03T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ25",
+                "PURCHORD25",
+                "MATERIAL48"
+            ],
+            "ocel:vmap": {}
+        },
+        "227": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-04T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD25",
+                "MATERIAL48",
+                "GDSRCPT25"
+            ],
+            "ocel:vmap": {}
+        },
+        "228": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-02T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD25",
+                "MATERIAL48",
+                "GDSRCPT25"
+            ],
+            "ocel:vmap": {}
+        },
+        "229": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-06T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL48"
+            ],
+            "ocel:vmap": {}
+        },
+        "230": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-06T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL48"
+            ],
+            "ocel:vmap": {}
+        },
+        "231": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-06T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD25",
+                "INVOICE35"
+            ],
+            "ocel:vmap": {}
+        },
+        "232": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-07T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL48"
+            ],
+            "ocel:vmap": {}
+        },
+        "233": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-07T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD25",
+                "GDSRCPT25",
+                "INVOICE35"
+            ],
+            "ocel:vmap": {}
+        },
+        "234": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-03T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ26",
+                "MATERIAL49",
+                "MATERIAL50",
+                "MATERIAL51"
+            ],
+            "ocel:vmap": {}
+        },
+        "235": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-04T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ26",
+                "PURCHORD26",
+                "MATERIAL49",
+                "MATERIAL50",
+                "MATERIAL51"
+            ],
+            "ocel:vmap": {}
+        },
+        "236": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-05T09:02:00+02:00",
+            "ocel:omap": [
+                "PURCHORD26",
+                "MATERIAL49",
+                "MATERIAL50",
+                "MATERIAL51",
+                "GDSRCPT26"
+            ],
+            "ocel:vmap": {}
+        },
+        "237": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-06T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD26",
+                "MATERIAL49",
+                "MATERIAL50",
+                "MATERIAL51",
+                "GDSRCPT26"
+            ],
+            "ocel:vmap": {}
+        },
+        "238": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-09T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL49",
+                "MATERIAL50",
+                "MATERIAL51"
+            ],
+            "ocel:vmap": {}
+        },
+        "239": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-09T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD26",
+                "INVOICE36"
+            ],
+            "ocel:vmap": {}
+        },
+        "240": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-09T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL49",
+                "MATERIAL50",
+                "MATERIAL51"
+            ],
+            "ocel:vmap": {}
+        },
+        "241": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-10T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD26",
+                "GDSRCPT26",
+                "INVOICE36"
+            ],
+            "ocel:vmap": {}
+        },
+        "242": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-10T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL49",
+                "MATERIAL50",
+                "MATERIAL51"
+            ],
+            "ocel:vmap": {}
+        },
+        "243": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-03T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ27",
+                "MATERIAL52",
+                "MATERIAL53"
+            ],
+            "ocel:vmap": {}
+        },
+        "244": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-04T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ27",
+                "PURCHORD27",
+                "MATERIAL52",
+                "MATERIAL53"
+            ],
+            "ocel:vmap": {}
+        },
+        "245": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-05T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD27",
+                "MATERIAL52",
+                "MATERIAL53",
+                "GDSRCPT27"
+            ],
+            "ocel:vmap": {}
+        },
+        "246": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-06T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD27",
+                "MATERIAL52",
+                "MATERIAL53",
+                "GDSRCPT27"
+            ],
+            "ocel:vmap": {}
+        },
+        "247": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-09T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL52",
+                "MATERIAL53"
+            ],
+            "ocel:vmap": {}
+        },
+        "248": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-09T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL52",
+                "MATERIAL53"
+            ],
+            "ocel:vmap": {}
+        },
+        "249": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-09T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD27",
+                "INVOICE37"
+            ],
+            "ocel:vmap": {}
+        },
+        "250": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-10T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL52",
+                "MATERIAL53"
+            ],
+            "ocel:vmap": {}
+        },
+        "251": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-10T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD27",
+                "GDSRCPT27",
+                "INVOICE37"
+            ],
+            "ocel:vmap": {}
+        },
+        "252": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-04T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ28",
+                "MATERIAL54"
+            ],
+            "ocel:vmap": {}
+        },
+        "253": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-05T09:02:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ28",
+                "PURCHORD28",
+                "MATERIAL54"
+            ],
+            "ocel:vmap": {}
+        },
+        "254": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-08T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD28",
+                "MATERIAL54",
+                "GDSRCPT28"
+            ],
+            "ocel:vmap": {}
+        },
+        "255": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-09T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD28",
+                "MATERIAL54",
+                "GDSRCPT28"
+            ],
+            "ocel:vmap": {}
+        },
+        "256": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-13T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL54"
+            ],
+            "ocel:vmap": {}
+        },
+        "257": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-13T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD28",
+                "INVOICE38",
+                "INVOICE39"
+            ],
+            "ocel:vmap": {}
+        },
+        "258": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-13T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL54"
+            ],
+            "ocel:vmap": {}
+        },
+        "259": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-14T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL54"
+            ],
+            "ocel:vmap": {}
+        },
+        "260": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-14T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD28",
+                "GDSRCPT28",
+                "INVOICE38",
+                "INVOICE39"
+            ],
+            "ocel:vmap": {}
+        },
+        "261": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-04T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ29",
+                "MATERIAL55",
+                "MATERIAL56",
+                "MATERIAL57"
+            ],
+            "ocel:vmap": {}
+        },
+        "262": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-05T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ29",
+                "PURCHORD29",
+                "MATERIAL55",
+                "MATERIAL56",
+                "MATERIAL57"
+            ],
+            "ocel:vmap": {}
+        },
+        "263": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-08T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD29",
+                "MATERIAL55",
+                "MATERIAL56",
+                "MATERIAL57",
+                "GDSRCPT29"
+            ],
+            "ocel:vmap": {}
+        },
+        "264": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-09T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD29",
+                "MATERIAL55",
+                "MATERIAL56",
+                "MATERIAL57",
+                "GDSRCPT29"
+            ],
+            "ocel:vmap": {}
+        },
+        "265": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-13T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL55",
+                "MATERIAL56",
+                "MATERIAL57"
+            ],
+            "ocel:vmap": {}
+        },
+        "266": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-13T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL55",
+                "MATERIAL56",
+                "MATERIAL57"
+            ],
+            "ocel:vmap": {}
+        },
+        "267": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-13T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD29",
+                "INVOICE40",
+                "INVOICE41"
+            ],
+            "ocel:vmap": {}
+        },
+        "268": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-14T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD29",
+                "GDSRCPT29",
+                "INVOICE40",
+                "INVOICE41"
+            ],
+            "ocel:vmap": {}
+        },
+        "269": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-14T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL55",
+                "MATERIAL56",
+                "MATERIAL57"
+            ],
+            "ocel:vmap": {}
+        },
+        "270": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-05T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ30",
+                "MATERIAL58"
+            ],
+            "ocel:vmap": {}
+        },
+        "271": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-08T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ30",
+                "PURCHORD30",
+                "MATERIAL58"
+            ],
+            "ocel:vmap": {}
+        },
+        "272": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-09T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD30",
+                "MATERIAL58",
+                "GDSRCPT30"
+            ],
+            "ocel:vmap": {}
+        },
+        "273": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-13T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD30",
+                "MATERIAL58",
+                "GDSRCPT30"
+            ],
+            "ocel:vmap": {}
+        },
+        "274": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-16T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL58"
+            ],
+            "ocel:vmap": {}
+        },
+        "275": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-16T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD30",
+                "INVOICE42",
+                "INVOICE43"
+            ],
+            "ocel:vmap": {}
+        },
+        "276": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-16T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL58"
+            ],
+            "ocel:vmap": {}
+        },
+        "277": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-17T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD30",
+                "GDSRCPT30",
+                "INVOICE42",
+                "INVOICE43"
+            ],
+            "ocel:vmap": {}
+        },
+        "278": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-17T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL58"
+            ],
+            "ocel:vmap": {}
+        },
+        "279": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-05T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ31",
+                "MATERIAL59",
+                "MATERIAL60"
+            ],
+            "ocel:vmap": {}
+        },
+        "280": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-08T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ31",
+                "PURCHORD31",
+                "MATERIAL59",
+                "MATERIAL60"
+            ],
+            "ocel:vmap": {}
+        },
+        "281": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-09T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD31",
+                "MATERIAL59",
+                "MATERIAL60",
+                "GDSRCPT31"
+            ],
+            "ocel:vmap": {}
+        },
+        "282": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-13T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD31",
+                "MATERIAL59",
+                "MATERIAL60",
+                "GDSRCPT31"
+            ],
+            "ocel:vmap": {}
+        },
+        "283": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-16T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL59",
+                "MATERIAL60"
+            ],
+            "ocel:vmap": {}
+        },
+        "284": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-16T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD31",
+                "INVOICE44"
+            ],
+            "ocel:vmap": {}
+        },
+        "285": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-16T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL59",
+                "MATERIAL60"
+            ],
+            "ocel:vmap": {}
+        },
+        "286": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-17T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD31",
+                "GDSRCPT31",
+                "INVOICE44"
+            ],
+            "ocel:vmap": {}
+        },
+        "287": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-17T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL59",
+                "MATERIAL60"
+            ],
+            "ocel:vmap": {}
+        },
+        "288": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-08T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ32",
+                "MATERIAL61",
+                "MATERIAL62",
+                "MATERIAL63"
+            ],
+            "ocel:vmap": {}
+        },
+        "289": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-09T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ32",
+                "PURCHORD32",
+                "MATERIAL61",
+                "MATERIAL62",
+                "MATERIAL63"
+            ],
+            "ocel:vmap": {}
+        },
+        "290": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-10T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD32",
+                "MATERIAL61",
+                "MATERIAL62",
+                "MATERIAL63",
+                "GDSRCPT32"
+            ],
+            "ocel:vmap": {}
+        },
+        "291": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-16T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD32",
+                "MATERIAL61",
+                "MATERIAL62",
+                "MATERIAL63",
+                "GDSRCPT32"
+            ],
+            "ocel:vmap": {}
+        },
+        "292": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-20T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL61",
+                "MATERIAL62",
+                "MATERIAL63"
+            ],
+            "ocel:vmap": {}
+        },
+        "293": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-20T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL61",
+                "MATERIAL62",
+                "MATERIAL63"
+            ],
+            "ocel:vmap": {}
+        },
+        "294": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-20T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD32",
+                "INVOICE45"
+            ],
+            "ocel:vmap": {}
+        },
+        "295": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-21T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL61",
+                "MATERIAL62",
+                "MATERIAL63"
+            ],
+            "ocel:vmap": {}
+        },
+        "296": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-21T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD32",
+                "GDSRCPT32",
+                "INVOICE45"
+            ],
+            "ocel:vmap": {}
+        },
+        "297": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-08T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ33",
+                "MATERIAL64"
+            ],
+            "ocel:vmap": {}
+        },
+        "298": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-09T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ33",
+                "PURCHORD33",
+                "MATERIAL64"
+            ],
+            "ocel:vmap": {}
+        },
+        "299": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-10T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD33",
+                "MATERIAL64",
+                "GDSRCPT33"
+            ],
+            "ocel:vmap": {}
+        },
+        "300": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-16T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD33",
+                "MATERIAL64",
+                "GDSRCPT33"
+            ],
+            "ocel:vmap": {}
+        },
+        "301": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-20T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL64"
+            ],
+            "ocel:vmap": {}
+        },
+        "302": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-20T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL64"
+            ],
+            "ocel:vmap": {}
+        },
+        "303": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-20T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD33",
+                "INVOICE46",
+                "INVOICE47"
+            ],
+            "ocel:vmap": {}
+        },
+        "304": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-21T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD33",
+                "GDSRCPT33",
+                "INVOICE46",
+                "INVOICE47"
+            ],
+            "ocel:vmap": {}
+        },
+        "305": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-21T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL64"
+            ],
+            "ocel:vmap": {}
+        },
+        "306": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-09T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ34",
+                "MATERIAL65"
+            ],
+            "ocel:vmap": {}
+        },
+        "307": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-10T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ34",
+                "PURCHORD34",
+                "MATERIAL65"
+            ],
+            "ocel:vmap": {}
+        },
+        "308": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-11T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD34",
+                "MATERIAL65",
+                "GDSRCPT34"
+            ],
+            "ocel:vmap": {}
+        },
+        "309": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-20T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD34",
+                "MATERIAL65",
+                "GDSRCPT34"
+            ],
+            "ocel:vmap": {}
+        },
+        "310": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-23T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL65"
+            ],
+            "ocel:vmap": {}
+        },
+        "311": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-23T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD34",
+                "INVOICE48",
+                "INVOICE49"
+            ],
+            "ocel:vmap": {}
+        },
+        "312": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-23T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL65"
+            ],
+            "ocel:vmap": {}
+        },
+        "313": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-24T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD34",
+                "GDSRCPT34",
+                "INVOICE48",
+                "INVOICE49"
+            ],
+            "ocel:vmap": {}
+        },
+        "314": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-24T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL65"
+            ],
+            "ocel:vmap": {}
+        },
+        "315": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-09T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ35",
+                "MATERIAL66",
+                "MATERIAL67",
+                "MATERIAL68"
+            ],
+            "ocel:vmap": {}
+        },
+        "316": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-10T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ35",
+                "PURCHORD35",
+                "MATERIAL66",
+                "MATERIAL67",
+                "MATERIAL68"
+            ],
+            "ocel:vmap": {}
+        },
+        "317": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-11T09:02:00+02:00",
+            "ocel:omap": [
+                "PURCHORD35",
+                "MATERIAL66",
+                "MATERIAL67",
+                "MATERIAL68",
+                "GDSRCPT35"
+            ],
+            "ocel:vmap": {}
+        },
+        "318": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-20T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD35",
+                "MATERIAL66",
+                "MATERIAL67",
+                "MATERIAL68",
+                "GDSRCPT35"
+            ],
+            "ocel:vmap": {}
+        },
+        "319": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-23T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL66",
+                "MATERIAL67",
+                "MATERIAL68"
+            ],
+            "ocel:vmap": {}
+        },
+        "320": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-23T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL66",
+                "MATERIAL67",
+                "MATERIAL68"
+            ],
+            "ocel:vmap": {}
+        },
+        "321": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-23T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD35",
+                "INVOICE50",
+                "INVOICE51"
+            ],
+            "ocel:vmap": {}
+        },
+        "322": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-24T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL66",
+                "MATERIAL67",
+                "MATERIAL68"
+            ],
+            "ocel:vmap": {}
+        },
+        "323": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-24T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD35",
+                "GDSRCPT35",
+                "INVOICE50",
+                "INVOICE51"
+            ],
+            "ocel:vmap": {}
+        },
+        "324": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-10T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ36",
+                "MATERIAL69"
+            ],
+            "ocel:vmap": {}
+        },
+        "325": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-11T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ36",
+                "PURCHORD36",
+                "MATERIAL69"
+            ],
+            "ocel:vmap": {}
+        },
+        "326": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-12T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD36",
+                "MATERIAL69",
+                "GDSRCPT36"
+            ],
+            "ocel:vmap": {}
+        },
+        "327": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-23T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD36",
+                "MATERIAL69",
+                "GDSRCPT36"
+            ],
+            "ocel:vmap": {}
+        },
+        "328": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-27T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL69"
+            ],
+            "ocel:vmap": {}
+        },
+        "329": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-27T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL69"
+            ],
+            "ocel:vmap": {}
+        },
+        "330": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-27T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD36",
+                "INVOICE52"
+            ],
+            "ocel:vmap": {}
+        },
+        "331": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-28T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL69"
+            ],
+            "ocel:vmap": {}
+        },
+        "332": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-28T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD36",
+                "GDSRCPT36",
+                "INVOICE52"
+            ],
+            "ocel:vmap": {}
+        },
+        "333": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-10T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ37",
+                "MATERIAL70"
+            ],
+            "ocel:vmap": {}
+        },
+        "334": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-11T09:02:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ37",
+                "PURCHORD37",
+                "MATERIAL70"
+            ],
+            "ocel:vmap": {}
+        },
+        "335": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-12T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD37",
+                "MATERIAL70",
+                "GDSRCPT37"
+            ],
+            "ocel:vmap": {}
+        },
+        "336": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-23T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD37",
+                "MATERIAL70",
+                "GDSRCPT37"
+            ],
+            "ocel:vmap": {}
+        },
+        "337": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-27T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL70"
+            ],
+            "ocel:vmap": {}
+        },
+        "338": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-27T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL70"
+            ],
+            "ocel:vmap": {}
+        },
+        "339": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-27T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD37",
+                "INVOICE53",
+                "INVOICE54"
+            ],
+            "ocel:vmap": {}
+        },
+        "340": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-28T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL70"
+            ],
+            "ocel:vmap": {}
+        },
+        "341": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-28T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD37",
+                "GDSRCPT37",
+                "INVOICE53",
+                "INVOICE54"
+            ],
+            "ocel:vmap": {}
+        },
+        "342": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-11T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ38",
+                "MATERIAL71"
+            ],
+            "ocel:vmap": {}
+        },
+        "343": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-12T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ38",
+                "PURCHORD38",
+                "MATERIAL71"
+            ],
+            "ocel:vmap": {}
+        },
+        "344": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-15T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD38",
+                "MATERIAL71",
+                "GDSRCPT38"
+            ],
+            "ocel:vmap": {}
+        },
+        "345": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-27T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD38",
+                "MATERIAL71",
+                "GDSRCPT38"
+            ],
+            "ocel:vmap": {}
+        },
+        "346": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-30T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL71"
+            ],
+            "ocel:vmap": {}
+        },
+        "347": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-30T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL71"
+            ],
+            "ocel:vmap": {}
+        },
+        "348": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-30T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD38",
+                "INVOICE55",
+                "INVOICE56"
+            ],
+            "ocel:vmap": {}
+        },
+        "349": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-31T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD38",
+                "GDSRCPT38",
+                "INVOICE55",
+                "INVOICE56"
+            ],
+            "ocel:vmap": {}
+        },
+        "350": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-31T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL71"
+            ],
+            "ocel:vmap": {}
+        },
+        "351": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-11T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ39",
+                "MATERIAL72",
+                "MATERIAL73"
+            ],
+            "ocel:vmap": {}
+        },
+        "352": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-12T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ39",
+                "PURCHORD39",
+                "MATERIAL72",
+                "MATERIAL73"
+            ],
+            "ocel:vmap": {}
+        },
+        "353": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-15T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD39",
+                "MATERIAL72",
+                "MATERIAL73",
+                "GDSRCPT39"
+            ],
+            "ocel:vmap": {}
+        },
+        "354": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-27T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD39",
+                "MATERIAL72",
+                "MATERIAL73",
+                "GDSRCPT39"
+            ],
+            "ocel:vmap": {}
+        },
+        "355": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2021-12-30T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL72",
+                "MATERIAL73"
+            ],
+            "ocel:vmap": {}
+        },
+        "356": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2021-12-30T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD39",
+                "INVOICE57"
+            ],
+            "ocel:vmap": {}
+        },
+        "357": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2021-12-30T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL72",
+                "MATERIAL73"
+            ],
+            "ocel:vmap": {}
+        },
+        "358": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2021-12-31T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL72",
+                "MATERIAL73"
+            ],
+            "ocel:vmap": {}
+        },
+        "359": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2021-12-31T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD39",
+                "GDSRCPT39",
+                "INVOICE57"
+            ],
+            "ocel:vmap": {}
+        },
+        "360": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-12T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ40",
+                "MATERIAL74",
+                "MATERIAL75"
+            ],
+            "ocel:vmap": {}
+        },
+        "361": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-15T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ40",
+                "PURCHORD40",
+                "MATERIAL74",
+                "MATERIAL75"
+            ],
+            "ocel:vmap": {}
+        },
+        "362": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-16T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD40",
+                "MATERIAL74",
+                "MATERIAL75",
+                "GDSRCPT40"
+            ],
+            "ocel:vmap": {}
+        },
+        "363": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-30T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD40",
+                "MATERIAL74",
+                "MATERIAL75",
+                "GDSRCPT40"
+            ],
+            "ocel:vmap": {}
+        },
+        "364": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2022-01-03T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL74",
+                "MATERIAL75"
+            ],
+            "ocel:vmap": {}
+        },
+        "365": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2022-01-03T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL74",
+                "MATERIAL75"
+            ],
+            "ocel:vmap": {}
+        },
+        "366": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2022-01-03T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD40",
+                "INVOICE58",
+                "INVOICE59"
+            ],
+            "ocel:vmap": {}
+        },
+        "367": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2022-01-04T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD40",
+                "GDSRCPT40",
+                "INVOICE58",
+                "INVOICE59"
+            ],
+            "ocel:vmap": {}
+        },
+        "368": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2022-01-04T09:03:00+02:00",
+            "ocel:omap": [
+                "MATERIAL74",
+                "MATERIAL75"
+            ],
+            "ocel:vmap": {}
+        },
+        "369": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-12T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ41",
+                "MATERIAL76"
+            ],
+            "ocel:vmap": {}
+        },
+        "370": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-15T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ41",
+                "PURCHORD41",
+                "MATERIAL76"
+            ],
+            "ocel:vmap": {}
+        },
+        "371": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-16T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD41",
+                "MATERIAL76",
+                "GDSRCPT41"
+            ],
+            "ocel:vmap": {}
+        },
+        "372": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2021-12-30T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD41",
+                "MATERIAL76",
+                "GDSRCPT41"
+            ],
+            "ocel:vmap": {}
+        },
+        "373": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2022-01-03T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL76"
+            ],
+            "ocel:vmap": {}
+        },
+        "374": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2022-01-03T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL76"
+            ],
+            "ocel:vmap": {}
+        },
+        "375": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2022-01-03T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD41",
+                "INVOICE60"
+            ],
+            "ocel:vmap": {}
+        },
+        "376": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2022-01-04T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL76"
+            ],
+            "ocel:vmap": {}
+        },
+        "377": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2022-01-04T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD41",
+                "GDSRCPT41",
+                "INVOICE60"
+            ],
+            "ocel:vmap": {}
+        },
+        "378": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-15T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ42",
+                "MATERIAL77",
+                "MATERIAL78",
+                "MATERIAL79"
+            ],
+            "ocel:vmap": {}
+        },
+        "379": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-16T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ42",
+                "PURCHORD42",
+                "MATERIAL77",
+                "MATERIAL78",
+                "MATERIAL79"
+            ],
+            "ocel:vmap": {}
+        },
+        "380": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-17T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD42",
+                "MATERIAL77",
+                "MATERIAL78",
+                "MATERIAL79",
+                "GDSRCPT42"
+            ],
+            "ocel:vmap": {}
+        },
+        "381": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2022-01-03T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD42",
+                "MATERIAL77",
+                "MATERIAL78",
+                "MATERIAL79",
+                "GDSRCPT42"
+            ],
+            "ocel:vmap": {}
+        },
+        "382": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2022-01-06T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD42",
+                "INVOICE61",
+                "INVOICE62"
+            ],
+            "ocel:vmap": {}
+        },
+        "383": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2022-01-06T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL77",
+                "MATERIAL78",
+                "MATERIAL79"
+            ],
+            "ocel:vmap": {}
+        },
+        "384": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2022-01-06T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL77",
+                "MATERIAL78",
+                "MATERIAL79"
+            ],
+            "ocel:vmap": {}
+        },
+        "385": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2022-01-07T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL77",
+                "MATERIAL78",
+                "MATERIAL79"
+            ],
+            "ocel:vmap": {}
+        },
+        "386": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2022-01-07T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD42",
+                "GDSRCPT42",
+                "INVOICE61",
+                "INVOICE62"
+            ],
+            "ocel:vmap": {}
+        },
+        "387": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-15T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ43",
+                "MATERIAL80",
+                "MATERIAL81",
+                "MATERIAL82"
+            ],
+            "ocel:vmap": {}
+        },
+        "388": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-16T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ43",
+                "PURCHORD43",
+                "MATERIAL80",
+                "MATERIAL81",
+                "MATERIAL82"
+            ],
+            "ocel:vmap": {}
+        },
+        "389": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-17T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD43",
+                "MATERIAL80",
+                "MATERIAL81",
+                "MATERIAL82",
+                "GDSRCPT43"
+            ],
+            "ocel:vmap": {}
+        },
+        "390": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2022-01-03T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD43",
+                "MATERIAL80",
+                "MATERIAL81",
+                "MATERIAL82",
+                "GDSRCPT43"
+            ],
+            "ocel:vmap": {}
+        },
+        "391": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2022-01-06T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL80",
+                "MATERIAL81",
+                "MATERIAL82"
+            ],
+            "ocel:vmap": {}
+        },
+        "392": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2022-01-06T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD43",
+                "INVOICE63",
+                "INVOICE64"
+            ],
+            "ocel:vmap": {}
+        },
+        "393": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2022-01-06T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL80",
+                "MATERIAL81",
+                "MATERIAL82"
+            ],
+            "ocel:vmap": {}
+        },
+        "394": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2022-01-07T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD43",
+                "GDSRCPT43",
+                "INVOICE63",
+                "INVOICE64"
+            ],
+            "ocel:vmap": {}
+        },
+        "395": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2022-01-07T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL80",
+                "MATERIAL81",
+                "MATERIAL82"
+            ],
+            "ocel:vmap": {}
+        },
+        "396": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-16T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ44",
+                "MATERIAL83",
+                "MATERIAL84",
+                "MATERIAL85"
+            ],
+            "ocel:vmap": {}
+        },
+        "397": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-17T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ44",
+                "PURCHORD44",
+                "MATERIAL83",
+                "MATERIAL84",
+                "MATERIAL85"
+            ],
+            "ocel:vmap": {}
+        },
+        "398": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-18T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD44",
+                "MATERIAL83",
+                "MATERIAL84",
+                "MATERIAL85",
+                "GDSRCPT44"
+            ],
+            "ocel:vmap": {}
+        },
+        "399": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2022-01-06T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD44",
+                "MATERIAL83",
+                "MATERIAL84",
+                "MATERIAL85",
+                "GDSRCPT44"
+            ],
+            "ocel:vmap": {}
+        },
+        "400": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2022-01-10T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL83",
+                "MATERIAL84",
+                "MATERIAL85"
+            ],
+            "ocel:vmap": {}
+        },
+        "401": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2022-01-10T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL83",
+                "MATERIAL84",
+                "MATERIAL85"
+            ],
+            "ocel:vmap": {}
+        },
+        "402": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2022-01-10T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD44",
+                "INVOICE65"
+            ],
+            "ocel:vmap": {}
+        },
+        "403": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2022-01-11T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL83",
+                "MATERIAL84",
+                "MATERIAL85"
+            ],
+            "ocel:vmap": {}
+        },
+        "404": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2022-01-11T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD44",
+                "GDSRCPT44",
+                "INVOICE65"
+            ],
+            "ocel:vmap": {}
+        },
+        "405": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-16T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ45",
+                "MATERIAL86"
+            ],
+            "ocel:vmap": {}
+        },
+        "406": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-17T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ45",
+                "PURCHORD45",
+                "MATERIAL86"
+            ],
+            "ocel:vmap": {}
+        },
+        "407": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-18T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD45",
+                "MATERIAL86",
+                "GDSRCPT45"
+            ],
+            "ocel:vmap": {}
+        },
+        "408": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2022-01-06T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD45",
+                "MATERIAL86",
+                "GDSRCPT45"
+            ],
+            "ocel:vmap": {}
+        },
+        "409": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2022-01-10T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL86"
+            ],
+            "ocel:vmap": {}
+        },
+        "410": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2022-01-10T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD45",
+                "INVOICE66",
+                "INVOICE67"
+            ],
+            "ocel:vmap": {}
+        },
+        "411": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2022-01-10T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL86"
+            ],
+            "ocel:vmap": {}
+        },
+        "412": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2022-01-11T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL86"
+            ],
+            "ocel:vmap": {}
+        },
+        "413": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2022-01-11T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD45",
+                "GDSRCPT45",
+                "INVOICE66",
+                "INVOICE67"
+            ],
+            "ocel:vmap": {}
+        },
+        "414": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-17T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ46",
+                "MATERIAL87"
+            ],
+            "ocel:vmap": {}
+        },
+        "415": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-18T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ46",
+                "PURCHORD46",
+                "MATERIAL87"
+            ],
+            "ocel:vmap": {}
+        },
+        "416": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-19T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD46",
+                "MATERIAL87",
+                "GDSRCPT46"
+            ],
+            "ocel:vmap": {}
+        },
+        "417": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2022-01-10T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD46",
+                "MATERIAL87",
+                "GDSRCPT46"
+            ],
+            "ocel:vmap": {}
+        },
+        "418": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2022-01-13T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD46",
+                "INVOICE68"
+            ],
+            "ocel:vmap": {}
+        },
+        "419": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2022-01-13T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL87"
+            ],
+            "ocel:vmap": {}
+        },
+        "420": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2022-01-13T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL87"
+            ],
+            "ocel:vmap": {}
+        },
+        "421": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2022-01-14T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL87"
+            ],
+            "ocel:vmap": {}
+        },
+        "422": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2022-01-14T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD46",
+                "GDSRCPT46",
+                "INVOICE68"
+            ],
+            "ocel:vmap": {}
+        },
+        "423": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-17T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ47",
+                "MATERIAL88",
+                "MATERIAL89",
+                "MATERIAL90"
+            ],
+            "ocel:vmap": {}
+        },
+        "424": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-18T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ47",
+                "PURCHORD47",
+                "MATERIAL88",
+                "MATERIAL89",
+                "MATERIAL90"
+            ],
+            "ocel:vmap": {}
+        },
+        "425": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-19T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD47",
+                "MATERIAL88",
+                "MATERIAL89",
+                "MATERIAL90",
+                "GDSRCPT47"
+            ],
+            "ocel:vmap": {}
+        },
+        "426": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2022-01-10T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD47",
+                "MATERIAL88",
+                "MATERIAL89",
+                "MATERIAL90",
+                "GDSRCPT47"
+            ],
+            "ocel:vmap": {}
+        },
+        "427": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2022-01-13T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL88",
+                "MATERIAL89",
+                "MATERIAL90"
+            ],
+            "ocel:vmap": {}
+        },
+        "428": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2022-01-13T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD47",
+                "INVOICE69",
+                "INVOICE70"
+            ],
+            "ocel:vmap": {}
+        },
+        "429": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2022-01-13T09:01:00+02:00",
+            "ocel:omap": [
+                "MATERIAL88",
+                "MATERIAL89",
+                "MATERIAL90"
+            ],
+            "ocel:vmap": {}
+        },
+        "430": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2022-01-14T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD47",
+                "GDSRCPT47",
+                "INVOICE69",
+                "INVOICE70"
+            ],
+            "ocel:vmap": {}
+        },
+        "431": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2022-01-14T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL88",
+                "MATERIAL89",
+                "MATERIAL90"
+            ],
+            "ocel:vmap": {}
+        },
+        "432": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-18T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ48",
+                "MATERIAL91",
+                "MATERIAL92"
+            ],
+            "ocel:vmap": {}
+        },
+        "433": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-19T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ48",
+                "PURCHORD48",
+                "MATERIAL91",
+                "MATERIAL92"
+            ],
+            "ocel:vmap": {}
+        },
+        "434": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-22T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD48",
+                "MATERIAL91",
+                "MATERIAL92",
+                "GDSRCPT48"
+            ],
+            "ocel:vmap": {}
+        },
+        "435": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2022-01-13T09:01:00+02:00",
+            "ocel:omap": [
+                "PURCHORD48",
+                "MATERIAL91",
+                "MATERIAL92",
+                "GDSRCPT48"
+            ],
+            "ocel:vmap": {}
+        },
+        "436": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2022-01-17T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL91",
+                "MATERIAL92"
+            ],
+            "ocel:vmap": {}
+        },
+        "437": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2022-01-17T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL91",
+                "MATERIAL92"
+            ],
+            "ocel:vmap": {}
+        },
+        "438": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2022-01-17T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD48",
+                "INVOICE71"
+            ],
+            "ocel:vmap": {}
+        },
+        "439": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2022-01-18T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL91",
+                "MATERIAL92"
+            ],
+            "ocel:vmap": {}
+        },
+        "440": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2022-01-18T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD48",
+                "GDSRCPT48",
+                "INVOICE71"
+            ],
+            "ocel:vmap": {}
+        },
+        "441": {
+            "ocel:activity": "Create Purchase Requisition",
+            "ocel:timestamp": "2021-11-18T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ49",
+                "MATERIAL93",
+                "MATERIAL94",
+                "MATERIAL95"
+            ],
+            "ocel:vmap": {}
+        },
+        "442": {
+            "ocel:activity": "Create Purchase Order",
+            "ocel:timestamp": "2021-11-19T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHREQ49",
+                "PURCHORD49",
+                "MATERIAL93",
+                "MATERIAL94",
+                "MATERIAL95"
+            ],
+            "ocel:vmap": {}
+        },
+        "443": {
+            "ocel:activity": "Receive Goods",
+            "ocel:timestamp": "2021-11-22T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD49",
+                "MATERIAL93",
+                "MATERIAL94",
+                "MATERIAL95",
+                "GDSRCPT49"
+            ],
+            "ocel:vmap": {}
+        },
+        "444": {
+            "ocel:activity": "Issue Goods Receipt",
+            "ocel:timestamp": "2022-01-13T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD49",
+                "MATERIAL93",
+                "MATERIAL94",
+                "MATERIAL95",
+                "GDSRCPT49"
+            ],
+            "ocel:vmap": {}
+        },
+        "445": {
+            "ocel:activity": "Receive Invoice",
+            "ocel:timestamp": "2022-01-17T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD49",
+                "INVOICE72"
+            ],
+            "ocel:vmap": {}
+        },
+        "446": {
+            "ocel:activity": "Verify Material",
+            "ocel:timestamp": "2022-01-17T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL93",
+                "MATERIAL94",
+                "MATERIAL95"
+            ],
+            "ocel:vmap": {}
+        },
+        "447": {
+            "ocel:activity": "Plan Goods Issue",
+            "ocel:timestamp": "2022-01-17T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL93",
+                "MATERIAL94",
+                "MATERIAL95"
+            ],
+            "ocel:vmap": {}
+        },
+        "448": {
+            "ocel:activity": "Clear Invoice",
+            "ocel:timestamp": "2022-01-18T09:00:00+02:00",
+            "ocel:omap": [
+                "PURCHORD49",
+                "GDSRCPT49",
+                "INVOICE72"
+            ],
+            "ocel:vmap": {}
+        },
+        "449": {
+            "ocel:activity": "Goods Issue",
+            "ocel:timestamp": "2022-01-18T09:00:00+02:00",
+            "ocel:omap": [
+                "MATERIAL93",
+                "MATERIAL94",
+                "MATERIAL95"
+            ],
+            "ocel:vmap": {}
+        }
+    },
+    "ocel:objects": {
+        "PURCHREQ0": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD0": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL0": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 323,
+                "effective_price": 362,
+                "quantity": 9,
+                "diff_quantity": 0,
+                "diff_issue": 2
+            }
+        },
+        "MATERIAL1": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 349,
+                "effective_price": 235,
+                "quantity": 7,
+                "diff_quantity": 0,
+                "diff_issue": 0
+            }
+        },
+        "MATERIAL2": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 358,
+                "effective_price": 243,
+                "quantity": 6,
+                "diff_quantity": 2,
+                "diff_issue": 4
+            }
+        },
+        "GDSRCPT0": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE0": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ1": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD1": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL3": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 271,
+                "effective_price": 245,
+                "quantity": 5,
+                "diff_quantity": 0,
+                "diff_issue": 2
+            }
+        },
+        "MATERIAL4": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 211,
+                "effective_price": 210,
+                "quantity": 5,
+                "diff_quantity": 1,
+                "diff_issue": 2
+            }
+        },
+        "GDSRCPT1": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE1": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ2": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD2": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL5": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 217,
+                "effective_price": 198,
+                "quantity": 14,
+                "diff_quantity": 2,
+                "diff_issue": 3
+            }
+        },
+        "MATERIAL6": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 381,
+                "effective_price": 288,
+                "quantity": 12,
+                "diff_quantity": 1,
+                "diff_issue": 3
+            }
+        },
+        "GDSRCPT2": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE2": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ3": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD3": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL7": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 217,
+                "effective_price": 301,
+                "quantity": 7,
+                "diff_quantity": 2,
+                "diff_issue": 0
+            }
+        },
+        "GDSRCPT3": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE3": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ4": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD4": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL8": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 211,
+                "effective_price": 197,
+                "quantity": 6,
+                "diff_quantity": 1,
+                "diff_issue": 1
+            }
+        },
+        "MATERIAL9": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 251,
+                "effective_price": 245,
+                "quantity": 12,
+                "diff_quantity": 1,
+                "diff_issue": 0
+            }
+        },
+        "GDSRCPT4": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE4": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE5": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ5": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD5": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL10": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 331,
+                "effective_price": 231,
+                "quantity": 6,
+                "diff_quantity": 1,
+                "diff_issue": 4
+            }
+        },
+        "GDSRCPT5": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE6": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE7": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ6": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD6": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL11": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 334,
+                "effective_price": 337,
+                "quantity": 12,
+                "diff_quantity": 0,
+                "diff_issue": 2
+            }
+        },
+        "MATERIAL12": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 332,
+                "effective_price": 233,
+                "quantity": 8,
+                "diff_quantity": 1,
+                "diff_issue": 1
+            }
+        },
+        "GDSRCPT6": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE8": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ7": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD7": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL13": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 283,
+                "effective_price": 191,
+                "quantity": 10,
+                "diff_quantity": 1,
+                "diff_issue": 3
+            }
+        },
+        "MATERIAL14": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 319,
+                "effective_price": 240,
+                "quantity": 5,
+                "diff_quantity": 0,
+                "diff_issue": 3
+            }
+        },
+        "GDSRCPT7": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE9": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ8": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD8": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL15": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 307,
+                "effective_price": 196,
+                "quantity": 10,
+                "diff_quantity": 0,
+                "diff_issue": 4
+            }
+        },
+        "MATERIAL16": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 301,
+                "effective_price": 299,
+                "quantity": 9,
+                "diff_quantity": 0,
+                "diff_issue": 1
+            }
+        },
+        "GDSRCPT8": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE10": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ9": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD9": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL17": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 386,
+                "effective_price": 315,
+                "quantity": 8,
+                "diff_quantity": 0,
+                "diff_issue": 0
+            }
+        },
+        "GDSRCPT9": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE11": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE12": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ10": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD10": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL18": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 321,
+                "effective_price": 369,
+                "quantity": 9,
+                "diff_quantity": 1,
+                "diff_issue": 0
+            }
+        },
+        "MATERIAL19": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 376,
+                "effective_price": 372,
+                "quantity": 12,
+                "diff_quantity": 1,
+                "diff_issue": 2
+            }
+        },
+        "GDSRCPT10": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE13": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE14": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ11": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD11": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL20": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 301,
+                "effective_price": 229,
+                "quantity": 14,
+                "diff_quantity": 1,
+                "diff_issue": 1
+            }
+        },
+        "MATERIAL21": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 347,
+                "effective_price": 374,
+                "quantity": 10,
+                "diff_quantity": 2,
+                "diff_issue": 1
+            }
+        },
+        "GDSRCPT11": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE15": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ12": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD12": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL22": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 386,
+                "effective_price": 348,
+                "quantity": 11,
+                "diff_quantity": 1,
+                "diff_issue": 0
+            }
+        },
+        "GDSRCPT12": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE16": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ13": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD13": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL23": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 209,
+                "effective_price": 293,
+                "quantity": 6,
+                "diff_quantity": 2,
+                "diff_issue": 4
+            }
+        },
+        "MATERIAL24": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 234,
+                "effective_price": 366,
+                "quantity": 8,
+                "diff_quantity": 2,
+                "diff_issue": 1
+            }
+        },
+        "MATERIAL25": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 321,
+                "effective_price": 200,
+                "quantity": 6,
+                "diff_quantity": 1,
+                "diff_issue": 0
+            }
+        },
+        "GDSRCPT13": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE17": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ14": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD14": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL26": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 351,
+                "effective_price": 377,
+                "quantity": 8,
+                "diff_quantity": 0,
+                "diff_issue": 3
+            }
+        },
+        "GDSRCPT14": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE18": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ15": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD15": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL27": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 370,
+                "effective_price": 193,
+                "quantity": 10,
+                "diff_quantity": 1,
+                "diff_issue": 2
+            }
+        },
+        "GDSRCPT15": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE19": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE20": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ16": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD16": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL28": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 252,
+                "effective_price": 215,
+                "quantity": 5,
+                "diff_quantity": 2,
+                "diff_issue": 4
+            }
+        },
+        "MATERIAL29": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 222,
+                "effective_price": 328,
+                "quantity": 8,
+                "diff_quantity": 2,
+                "diff_issue": 0
+            }
+        },
+        "MATERIAL30": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 387,
+                "effective_price": 367,
+                "quantity": 8,
+                "diff_quantity": 0,
+                "diff_issue": 4
+            }
+        },
+        "GDSRCPT16": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE21": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE22": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ17": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD17": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL31": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 209,
+                "effective_price": 193,
+                "quantity": 5,
+                "diff_quantity": 2,
+                "diff_issue": 3
+            }
+        },
+        "MATERIAL32": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 276,
+                "effective_price": 350,
+                "quantity": 5,
+                "diff_quantity": 1,
+                "diff_issue": 0
+            }
+        },
+        "MATERIAL33": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 256,
+                "effective_price": 379,
+                "quantity": 12,
+                "diff_quantity": 1,
+                "diff_issue": 4
+            }
+        },
+        "GDSRCPT17": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE23": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE24": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ18": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD18": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL34": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 266,
+                "effective_price": 311,
+                "quantity": 6,
+                "diff_quantity": 2,
+                "diff_issue": 3
+            }
+        },
+        "MATERIAL35": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 389,
+                "effective_price": 209,
+                "quantity": 7,
+                "diff_quantity": 1,
+                "diff_issue": 4
+            }
+        },
+        "GDSRCPT18": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE25": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE26": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ19": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD19": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL36": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 387,
+                "effective_price": 191,
+                "quantity": 14,
+                "diff_quantity": 0,
+                "diff_issue": 0
+            }
+        },
+        "MATERIAL37": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 236,
+                "effective_price": 301,
+                "quantity": 7,
+                "diff_quantity": 0,
+                "diff_issue": 0
+            }
+        },
+        "MATERIAL38": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 271,
+                "effective_price": 358,
+                "quantity": 8,
+                "diff_quantity": 2,
+                "diff_issue": 4
+            }
+        },
+        "GDSRCPT19": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE27": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE28": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ20": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD20": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL39": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 358,
+                "effective_price": 224,
+                "quantity": 10,
+                "diff_quantity": 2,
+                "diff_issue": 2
+            }
+        },
+        "MATERIAL40": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 342,
+                "effective_price": 367,
+                "quantity": 6,
+                "diff_quantity": 1,
+                "diff_issue": 1
+            }
+        },
+        "GDSRCPT20": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE29": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ21": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD21": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL41": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 228,
+                "effective_price": 322,
+                "quantity": 12,
+                "diff_quantity": 1,
+                "diff_issue": 3
+            }
+        },
+        "GDSRCPT21": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE30": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ22": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD22": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL42": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 195,
+                "effective_price": 208,
+                "quantity": 8,
+                "diff_quantity": 1,
+                "diff_issue": 0
+            }
+        },
+        "MATERIAL43": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 316,
+                "effective_price": 191,
+                "quantity": 13,
+                "diff_quantity": 0,
+                "diff_issue": 2
+            }
+        },
+        "MATERIAL44": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 190,
+                "effective_price": 323,
+                "quantity": 12,
+                "diff_quantity": 1,
+                "diff_issue": 4
+            }
+        },
+        "GDSRCPT22": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE31": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ23": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD23": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL45": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 295,
+                "effective_price": 299,
+                "quantity": 6,
+                "diff_quantity": 1,
+                "diff_issue": 0
+            }
+        },
+        "MATERIAL46": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 210,
+                "effective_price": 196,
+                "quantity": 13,
+                "diff_quantity": 1,
+                "diff_issue": 1
+            }
+        },
+        "GDSRCPT23": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE32": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ24": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD24": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL47": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 262,
+                "effective_price": 378,
+                "quantity": 9,
+                "diff_quantity": 0,
+                "diff_issue": 2
+            }
+        },
+        "GDSRCPT24": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE33": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE34": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ25": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD25": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL48": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 196,
+                "effective_price": 378,
+                "quantity": 13,
+                "diff_quantity": 0,
+                "diff_issue": 4
+            }
+        },
+        "GDSRCPT25": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE35": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ26": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD26": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL49": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 357,
+                "effective_price": 204,
+                "quantity": 13,
+                "diff_quantity": 2,
+                "diff_issue": 1
+            }
+        },
+        "MATERIAL50": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 249,
+                "effective_price": 293,
+                "quantity": 8,
+                "diff_quantity": 2,
+                "diff_issue": 2
+            }
+        },
+        "MATERIAL51": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 239,
+                "effective_price": 388,
+                "quantity": 9,
+                "diff_quantity": 1,
+                "diff_issue": 0
+            }
+        },
+        "GDSRCPT26": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE36": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ27": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD27": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL52": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 358,
+                "effective_price": 199,
+                "quantity": 9,
+                "diff_quantity": 2,
+                "diff_issue": 2
+            }
+        },
+        "MATERIAL53": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 379,
+                "effective_price": 356,
+                "quantity": 9,
+                "diff_quantity": 2,
+                "diff_issue": 3
+            }
+        },
+        "GDSRCPT27": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE37": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ28": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD28": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL54": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 323,
+                "effective_price": 223,
+                "quantity": 7,
+                "diff_quantity": 1,
+                "diff_issue": 1
+            }
+        },
+        "GDSRCPT28": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE38": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE39": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ29": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD29": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL55": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 367,
+                "effective_price": 252,
+                "quantity": 5,
+                "diff_quantity": 2,
+                "diff_issue": 1
+            }
+        },
+        "MATERIAL56": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 284,
+                "effective_price": 365,
+                "quantity": 7,
+                "diff_quantity": 1,
+                "diff_issue": 1
+            }
+        },
+        "MATERIAL57": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 224,
+                "effective_price": 350,
+                "quantity": 8,
+                "diff_quantity": 1,
+                "diff_issue": 2
+            }
+        },
+        "GDSRCPT29": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE40": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE41": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ30": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD30": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL58": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 388,
+                "effective_price": 367,
+                "quantity": 5,
+                "diff_quantity": 1,
+                "diff_issue": 3
+            }
+        },
+        "GDSRCPT30": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE42": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE43": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ31": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD31": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL59": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 382,
+                "effective_price": 196,
+                "quantity": 7,
+                "diff_quantity": 2,
+                "diff_issue": 4
+            }
+        },
+        "MATERIAL60": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 312,
+                "effective_price": 274,
+                "quantity": 11,
+                "diff_quantity": 2,
+                "diff_issue": 2
+            }
+        },
+        "GDSRCPT31": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE44": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ32": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD32": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL61": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 328,
+                "effective_price": 326,
+                "quantity": 8,
+                "diff_quantity": 1,
+                "diff_issue": 1
+            }
+        },
+        "MATERIAL62": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 290,
+                "effective_price": 269,
+                "quantity": 12,
+                "diff_quantity": 0,
+                "diff_issue": 0
+            }
+        },
+        "MATERIAL63": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 306,
+                "effective_price": 203,
+                "quantity": 10,
+                "diff_quantity": 1,
+                "diff_issue": 1
+            }
+        },
+        "GDSRCPT32": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE45": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ33": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD33": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL64": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 346,
+                "effective_price": 383,
+                "quantity": 10,
+                "diff_quantity": 2,
+                "diff_issue": 2
+            }
+        },
+        "GDSRCPT33": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE46": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE47": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ34": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD34": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL65": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 206,
+                "effective_price": 326,
+                "quantity": 6,
+                "diff_quantity": 0,
+                "diff_issue": 0
+            }
+        },
+        "GDSRCPT34": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE48": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE49": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ35": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD35": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL66": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 340,
+                "effective_price": 341,
+                "quantity": 8,
+                "diff_quantity": 1,
+                "diff_issue": 1
+            }
+        },
+        "MATERIAL67": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 375,
+                "effective_price": 336,
+                "quantity": 6,
+                "diff_quantity": 2,
+                "diff_issue": 4
+            }
+        },
+        "MATERIAL68": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 370,
+                "effective_price": 340,
+                "quantity": 13,
+                "diff_quantity": 2,
+                "diff_issue": 4
+            }
+        },
+        "GDSRCPT35": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE50": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE51": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ36": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD36": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL69": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 249,
+                "effective_price": 349,
+                "quantity": 12,
+                "diff_quantity": 1,
+                "diff_issue": 0
+            }
+        },
+        "GDSRCPT36": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE52": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ37": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD37": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL70": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 269,
+                "effective_price": 216,
+                "quantity": 9,
+                "diff_quantity": 2,
+                "diff_issue": 4
+            }
+        },
+        "GDSRCPT37": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE53": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE54": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ38": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD38": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL71": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 320,
+                "effective_price": 265,
+                "quantity": 11,
+                "diff_quantity": 2,
+                "diff_issue": 3
+            }
+        },
+        "GDSRCPT38": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE55": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE56": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ39": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD39": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL72": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 295,
+                "effective_price": 273,
+                "quantity": 14,
+                "diff_quantity": 0,
+                "diff_issue": 2
+            }
+        },
+        "MATERIAL73": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 255,
+                "effective_price": 355,
+                "quantity": 9,
+                "diff_quantity": 0,
+                "diff_issue": 1
+            }
+        },
+        "GDSRCPT39": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE57": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ40": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD40": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL74": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 266,
+                "effective_price": 238,
+                "quantity": 13,
+                "diff_quantity": 2,
+                "diff_issue": 1
+            }
+        },
+        "MATERIAL75": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 387,
+                "effective_price": 348,
+                "quantity": 7,
+                "diff_quantity": 1,
+                "diff_issue": 2
+            }
+        },
+        "GDSRCPT40": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE58": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE59": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ41": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD41": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL76": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 376,
+                "effective_price": 318,
+                "quantity": 6,
+                "diff_quantity": 1,
+                "diff_issue": 0
+            }
+        },
+        "GDSRCPT41": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE60": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ42": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD42": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL77": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 378,
+                "effective_price": 331,
+                "quantity": 9,
+                "diff_quantity": 0,
+                "diff_issue": 3
+            }
+        },
+        "MATERIAL78": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 245,
+                "effective_price": 333,
+                "quantity": 13,
+                "diff_quantity": 1,
+                "diff_issue": 3
+            }
+        },
+        "MATERIAL79": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 387,
+                "effective_price": 385,
+                "quantity": 13,
+                "diff_quantity": 0,
+                "diff_issue": 1
+            }
+        },
+        "GDSRCPT42": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE61": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE62": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ43": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD43": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL80": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 348,
+                "effective_price": 292,
+                "quantity": 10,
+                "diff_quantity": 1,
+                "diff_issue": 2
+            }
+        },
+        "MATERIAL81": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 262,
+                "effective_price": 362,
+                "quantity": 8,
+                "diff_quantity": 2,
+                "diff_issue": 0
+            }
+        },
+        "MATERIAL82": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 269,
+                "effective_price": 384,
+                "quantity": 5,
+                "diff_quantity": 0,
+                "diff_issue": 1
+            }
+        },
+        "GDSRCPT43": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE63": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE64": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ44": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD44": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL83": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 326,
+                "effective_price": 273,
+                "quantity": 14,
+                "diff_quantity": 0,
+                "diff_issue": 4
+            }
+        },
+        "MATERIAL84": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 195,
+                "effective_price": 332,
+                "quantity": 11,
+                "diff_quantity": 0,
+                "diff_issue": 2
+            }
+        },
+        "MATERIAL85": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 301,
+                "effective_price": 262,
+                "quantity": 13,
+                "diff_quantity": 0,
+                "diff_issue": 2
+            }
+        },
+        "GDSRCPT44": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE65": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ45": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD45": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL86": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 213,
+                "effective_price": 274,
+                "quantity": 5,
+                "diff_quantity": 0,
+                "diff_issue": 1
+            }
+        },
+        "GDSRCPT45": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE66": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE67": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ46": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD46": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL87": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 230,
+                "effective_price": 309,
+                "quantity": 9,
+                "diff_quantity": 2,
+                "diff_issue": 3
+            }
+        },
+        "GDSRCPT46": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE68": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ47": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD47": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL88": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 320,
+                "effective_price": 256,
+                "quantity": 7,
+                "diff_quantity": 1,
+                "diff_issue": 3
+            }
+        },
+        "MATERIAL89": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 366,
+                "effective_price": 226,
+                "quantity": 7,
+                "diff_quantity": 2,
+                "diff_issue": 3
+            }
+        },
+        "MATERIAL90": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 260,
+                "effective_price": 212,
+                "quantity": 5,
+                "diff_quantity": 1,
+                "diff_issue": 1
+            }
+        },
+        "GDSRCPT47": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE69": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "INVOICE70": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ48": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD48": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL91": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 197,
+                "effective_price": 229,
+                "quantity": 7,
+                "diff_quantity": 2,
+                "diff_issue": 0
+            }
+        },
+        "MATERIAL92": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 190,
+                "effective_price": 387,
+                "quantity": 14,
+                "diff_quantity": 1,
+                "diff_issue": 3
+            }
+        },
+        "GDSRCPT48": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE71": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        },
+        "PURCHREQ49": {
+            "ocel:type": "PURCHREQ",
+            "ocel:ovmap": {}
+        },
+        "PURCHORD49": {
+            "ocel:type": "PURCHORD",
+            "ocel:ovmap": {}
+        },
+        "MATERIAL93": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 295,
+                "effective_price": 236,
+                "quantity": 12,
+                "diff_quantity": 1,
+                "diff_issue": 4
+            }
+        },
+        "MATERIAL94": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 260,
+                "effective_price": 324,
+                "quantity": 9,
+                "diff_quantity": 1,
+                "diff_issue": 1
+            }
+        },
+        "MATERIAL95": {
+            "ocel:type": "MATERIAL",
+            "ocel:ovmap": {
+                "net_price": 258,
+                "effective_price": 270,
+                "quantity": 14,
+                "diff_quantity": 2,
+                "diff_issue": 3
+            }
+        },
+        "GDSRCPT49": {
+            "ocel:type": "GDSRCPT",
+            "ocel:ovmap": {}
+        },
+        "INVOICE72": {
+            "ocel:type": "INVOICE",
+            "ocel:ovmap": {}
+        }
+    }
+}
